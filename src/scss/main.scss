@@ -3,7 +3,7 @@
 
 html {
     box-sizing: border-box;
-    font-family: 'Muli', sans-serif;
+    font-family: $font-principal;
 }
 
 *,
@@ -11,4 +11,17 @@ html {
 *:after {
     box-sizing: inherit;
     margin: 0;
+}
+
+h2, h3{
+  font-family: $font-principal;
+}
+
+.color-orange{
+  background: $color-orange;
+}
+
+.uk-navbar-nav>li>a{
+  color: white;
+  font-family: $font-principal;
 }
