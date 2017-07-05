@@ -1,2 +1,14 @@
 @import "variables.scss";
 @import "function.scss";
+
+html {
+    box-sizing: border-box;
+    font-family: 'Muli', sans-serif;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+    margin: 0;
+}
