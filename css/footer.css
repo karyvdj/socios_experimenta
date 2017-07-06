@@ -1,0 +1,10 @@
+.container-footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 2fr;
+  grid-template-rows: 30vh;
+  margin-top: 20vh; }
+  .container-footer li {
+    text-decoration: none;
+    list-style: none; }
+
+/*# sourceMappingURL=footer.css.map */
