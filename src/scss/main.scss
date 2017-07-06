@@ -37,6 +37,9 @@ h2, h3{
   color: $color-orange;
 }
 
+#background-home{
+  background-image: url(../assets/img/fotos-stock/gente-feliz/shutterstock_289485428.jpg);
+}
 .uk-navbar-nav>li>a, .uk-subnav>*>:first-child{
   color: white;
   font-family: $font-principal;
@@ -44,8 +47,4 @@ h2, h3{
 
 .uk-subnav{
   padding-top: 1.5%;
-}
-
-.text-decoration-none{
-  text-decoration: none;
 }
