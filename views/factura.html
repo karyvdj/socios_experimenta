@@ -1,0 +1,134 @@
+<html>
+<head>
+	<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Factura</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.25/css/uikit.min.css"/>
+    <link rel="stylesheet" href="../css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+</head>
+<body>
+	<header>
+      <nav class="uk-margin uk-padding-small color-orange" uk-navbar="mode: click" uk-sticky="bottom: #offset">
+        <div class="uk-navbar-left">
+          <a class="uk-navbar-item uk-logo" href="#"><img src="../assets/img/logo-experimenta/Logo-experimenta-white.svg" alt=""></a>
+        </div>
+        <div class="uk-navbar-right">
+            <ul class="uk-navbar-nav">
+                <li class="uk-active"><a href="#">Reservaciones</a></li>
+                <li><a href="#">Facturas</a></li>
+                <li>
+                    <a href="#">Perfil</a>
+                    <div class="uk-navbar-dropdown">
+                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                            <li class="uk-active"><a href="#"></a></li>
+                            <li><a href="#">Datos</a></li>
+                            <li><a href="#">Experiecias</a></li>
+                            <li><a href="#">Convenio</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#">Preguntas</a></li>
+                <li><a title="Cerrar Sesión" uk-tooltip="pos: bottom" href="#" uk-icon="icon: user"></a></li>
+            </ul>
+        </div>
+      </nav>
+    </header>
+
+
+<div class="uk-overflow-auto">
+	 <div class="uk-align-right">
+        <a class="uk-icon-button uk-margin-small-right color-green text-white" uk-search-icon href="#"></a>
+        <div class="uk-drop" uk-drop="mode: click; pos: left-center; offset: 0">
+            <form class="uk-search">
+
+                <input class="uk-search-input" type="search" placeholder="Buscar..." autofocus>
+            </form>
+        </div>
+      </div>
+    <table class="uk-table uk-table-hover uk-table-middle uk-table-divider">
+        <thead>
+        	<tr>Mostrando: 5/45</tr>
+            <tr href="#modal-caption" uk-toggle>
+                <th class="uk-table-shrink">Select</th>
+                <th class="uk-table-shrink">Folio</th>
+                <th class="uk-width-shrink">Compromiso pago</th>
+                <th class="uk-table-shrink">Importe</th>
+                <th class="uk-table-shrink">Comprobante</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr href="#modal-caption" uk-toggle>
+                <td><input class="uk-checkbox" type="checkbox"></td>
+                <td>0054</td>
+                <td class="uk-text-nowrap"><p>12/08/17</p></td>
+                <td class="uk-text-nowrap">$6,527.12</td>
+                <td class="uk-text-nowrap"><a href="#modal-center" uk-toggle uk-icon="icon: search"></a></td>
+            </tr>
+            <tr href="#modal-caption" uk-toggle>
+                <td><input class="uk-checkbox" type="checkbox"></td>
+                <td>0055</td>
+                <td class="uk-text-nowrap"><p>01/09/17</p></td>
+                <td class="uk-text-nowrap">$4,945.00</td>
+                <td class="uk-text-nowrap"><a href="#modal-center" uk-toggle uk-icon="icon: search"></a></td>
+            </tr>
+            <tr href="#modal-caption" uk-toggle>
+                <td><input class="uk-checkbox" type="checkbox"></td>
+                <td>0056</td>
+                <td class="uk-text-nowrap"><p>20/08/17</p></td>
+                <td class="uk-text-nowrap">$9,120.80</td>
+                <td class="uk-text-nowrap"><a href="#modal-center" uk-toggle uk-icon="icon: search"></a></td>
+            </tr>
+            <tr>
+                <td><input class="uk-checkbox" type="checkbox"></td>
+                <td>0057</td>
+                <td class="uk-text-nowrap"><p>25/08/17</p></td>
+                <td class="uk-text-nowrap">$2,995.00</td>
+                <td class="uk-text-nowrap"><a href="#modal-center" uk-toggle uk-icon="icon: search"></a></td>
+            </tr>
+            <tr href="#modal-caption" uk-toggle>
+>
+                <td><input class="uk-checkbox" type="checkbox"></td>
+                <td>0058</td>
+                <td class="uk-text-nowrap"><p>01/09/17</p></td>
+                <td class="uk-text-nowrap">$8,150.20</td>
+                <td class="uk-text-nowrap"><a href="#modal-center" uk-toggle uk-icon="icon: search"></td>
+            </tr>  
+        </tbody>
+    </table>
+       <h4>TOTAL: $31,738.12</h4>
+</div>
+
+
+<div id="modal-center" uk-modal="center: true">
+    <div class="uk-modal-dialog">
+        <button class="uk-modal-close-outside" type="button" uk-close></button>
+        <img src="../assets/img/comprobante.png" alt="">
+    </div>
+</div>
+
+
+<div id="modal-caption" uk-modal="center: true">
+    <div class="uk-modal-dialog">
+        <button class="uk-modal-close-default" type="button" uk-close></button>
+        <div class="uk-modal-body">
+            <span><strong>Folio:</strong></span> <span>0055</span>
+            <span><strong>Cliente:</strong> </span> <span>Miguel Duarte</span>
+            <span><strong>Fecha de experiencia:</strong> </span> <span>03/07/17</span>
+            <span><strong>Estatus:</strong> </span><span>Por pagar</span>
+            <span><strong>Compromiso pago:</strong></span> <span>01/09/17</span>
+        </div>
+        <div class="uk-modal-caption">Detalle de Factura</div>
+    </div>
+</div>
+	
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.25/js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.25/js/uikit-icons.min.js"></script>
+
+</html>
