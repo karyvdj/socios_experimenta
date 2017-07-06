@@ -14,8 +14,23 @@ h2, h3 {
 .color-orange {
   background: #FF671F; }
 
-.uk-navbar-nav > li > a {
+.color-green {
+  background: #7fc719; }
+
+.color-gray {
+  background: #51534A; }
+
+.text-white {
+  color: white; }
+
+.text-orange {
+  color: #FF671F; }
+
+.uk-navbar-nav > li > a, .uk-subnav > * > :first-child {
   color: white;
   font-family: "Muli", sans-serif; }
+
+.uk-subnav {
+  padding-top: 1.5%; }
 
 /*# sourceMappingURL=main.css.map */

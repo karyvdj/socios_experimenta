@@ -21,7 +21,27 @@ h2, h3{
   background: $color-orange;
 }
 
-.uk-navbar-nav>li>a{
+.color-green{
+  background: $color-green;
+}
+
+.color-gray{
+  background: $color-gray;
+}
+
+.text-white{
+  color: white;
+}
+
+.text-orange{
+  color: $color-orange;
+}
+
+.uk-navbar-nav>li>a, .uk-subnav>*>:first-child{
   color: white;
   font-family: $font-principal;
+}
+
+.uk-subnav{
+  padding-top: 1.5%;
 }
