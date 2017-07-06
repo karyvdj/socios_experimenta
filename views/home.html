@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Preguntas</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/img/logo-experimenta/ico_ex-02.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.25/css/uikit.min.css"/>
+    <link rel="stylesheet" href="../css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+  </head>
+  <body>
+    <header uk-sticky="animation: uk-animation-slide-top">
+      <nav class="uk-padding-small color-orange" uk-navbar="mode: click">
+        <div class="uk-navbar-left">
+          <a class="uk-navbar-item uk-logo" href="home.html"><img src="../assets/img/logo-experimenta/Logo-experimenta-white.svg" alt=""></a>
+        </div>
+        <div class="uk-navbar-right">
+          <ul class="uk-navbar-nav uk-iconnav">
+            <li><a href="#">Contacto</a></li>
+            <li>
+              <a title="Cerrar Sesión" uk-tooltip="pos: bottom" href="#" uk-icon="icon: user" ></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <section class="uk-flex uk-flex-center color-gray">
+          <ul class="uk-subnav uk-subnav-divider">
+              <li><a href="reservacion.html">Reservaciones</a></li>
+              <li><a href="factura.html">Facturas</a></li>
+              <li>
+                  <a href="#">Perfil<span uk-icon="icon:  triangle-down"></span></a>
+                  <div uk-dropdown="mode: click;">
+                      <ul class="uk-nav uk-navbar-dropdown-nav">
+                          <li class="uk-active"><a href="#"></a></li>
+                          <li><a href="datos.html">Datos</a></li>
+                          <li><a href="#">Experiecias</a></li>
+                          <li><a href="#">Convenio</a></li>
+                      </ul>
+                  </div>
+              </li>
+              <li><a href="preguntas.html">Preguntas</a></li>
+          </ul>
+      </section>
+    </header>
+
+    <section class="uk-background-cover" uk-height-viewport id="background-home" uk-scrollspy="cls: uk-animation-kenburns; repeat: true">
+
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.25/js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.25/js/uikit-icons.min.js"></script>
+  </body>
+</html>
