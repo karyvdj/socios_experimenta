@@ -1,3 +1,62 @@
+/* ANNNNNNN */
+html {
+  background-color: #FF671F; }
 
+body {
+  background-color: #FF671F;
+  display: grid;
+  grid-template-rows: 30vh auto;
+  justify-items: center; }
+
+.opening {
+  margin-top: 5vh;
+  padding: 2vh;
+  width: 50%;
+  height: 10vh;
+  align-content: center; }
+  .opening img {
+    width: 100%;
+    animation-name: experimenta;
+    animation-duration: 3s;
+    animation-timing-function: linear; }
+
+.signup-container {
+  vertical-align: middle;
+  padding: 4vh;
+  height: 80vh;
+  text-align: center;
+  animation-name: signup-sweep;
+  animation-delay: 0s;
+  animation-duration: 4s;
+  animation-timing-function: ease-in-out; }
+
+.form-container {
+  margin-top: 15vh; }
+
+@keyframes experimenta {
+  0% {
+    opacity: 0;
+    transform: scale(0.3) translateY(30vh); }
+  30% {
+    opacity: .3;
+    transform: scale(0.5) translateY(80vh); }
+  50% {
+    opacity: .7;
+    transform: scale(1) translateY(40vh); }
+  70% {
+    opacity: 1;
+    transform: scale(1) translateY(40vh); }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0vh); } }
+@keyframes signup-sweep {
+  0% {
+    opacity: 0;
+    transform: translateY(150vh); }
+  33% {
+    opacity: .4;
+    transform: scaleY(70vh); }
+  100% {
+    transform: translateY(0vh); } }
 
 /*# sourceMappingURL=index.css.map */
