@@ -5,39 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Reservaciones</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/img/logo-experimenta/ico_ex-02.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.25/css/uikit.min.css"/>
     <link rel="stylesheet" href="../css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
   </head>
   <body>
-    <header>
-      <nav class="uk-margin uk-padding-small color-orange" uk-navbar="mode: click" uk-sticky="bottom: #offset">
+    <header uk-sticky="animation: uk-animation-slide-top">
+      <nav class="uk-padding-small color-orange" uk-navbar="mode: click">
         <div class="uk-navbar-left">
           <a class="uk-navbar-item uk-logo" href="#"><img src="../assets/img/logo-experimenta/Logo-experimenta-white.svg" alt=""></a>
         </div>
         <div class="uk-navbar-right">
-            <ul class="uk-navbar-nav">
-                <li class="uk-active"><a href="#">Reservaciones</a></li>
-                <li><a href="#">Facturas</a></li>
-                <li>
-                    <a href="#">Perfil</a>
-                    <div class="uk-navbar-dropdown">
-                        <ul class="uk-nav uk-navbar-dropdown-nav">
-                            <li class="uk-active"><a href="#"></a></li>
-                            <li><a href="#">Datos</a></li>
-                            <li><a href="#">Experiecias</a></li>
-                            <li><a href="#">Convenio</a></li>
-                        </ul>
-                    </div>
-                </li>
-                <li><a href="#">Preguntas</a></li>
-                <li><a title="Cerrar Sesión" uk-tooltip="pos: bottom" href="#" uk-icon="icon: user"></a></li>
-            </ul>
+          <ul class="uk-navbar-nav uk-iconnav">
+            <li><a href="#">Contacto</a></li>
+            <li>
+              <a title="Cerrar Sesión" uk-tooltip="pos: bottom" href="#" uk-icon="icon: user" ></a>
+            </li>
+          </ul>
         </div>
       </nav>
+      <section class="uk-flex uk-flex-center color-gray">
+          <ul class="uk-subnav uk-subnav-divider">
+              <li><a href="#">Reservaciones</a></li>
+              <li><a href="#">Facturas</a></li>
+              <li>
+                  <a href="#">Perfil<span uk-icon="icon:  triangle-down"></span></a>
+                  <div uk-dropdown="mode: click;">
+                      <ul class="uk-nav uk-navbar-dropdown-nav">
+                          <li class="uk-active"><a href="#"></a></li>
+                          <li><a href="#">Datos</a></li>
+                          <li><a href="#">Experiecias</a></li>
+                          <li><a href="#">Convenio</a></li>
+                      </ul>
+                  </div>
+              </li>
+              <li><a href="#">Preguntas</a></li>
+          </ul>
+      </section>
     </header>
 
-    <section class="uk-padding uk-offcanvas-content">
+    <section class="uk-padding-large uk-offcanvas-content">
+      <div class="uk-heading-line">
+          <h2>Reservaciones</h2>
+      </div>
       <div class="uk-align-right">
         <a class="uk-icon-button uk-margin-small-right color-green text-white" uk-search-icon href="#"></a>
         <div class="uk-drop" uk-drop="mode: click; pos: left-center; offset: 0">
@@ -46,7 +57,7 @@
             </form>
         </div>
       </div>
-      <table class="uk-table uk-table-middle uk-table-divider">
+      <table class="uk-table uk-table-divider">
         <thead>
           <tr>
               <th class="uk-width-small">Folio</th>
@@ -54,47 +65,79 @@
               <th>Cliente</th>
               <th>Experiencia</th>
               <th>Fecha</th>
-              <th>Detalle</th>
+              <th>Observaciones</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-              <td>FOL000001</td>
-              <td>PENDIENTE</td>
+              <td>FOL000001 <a uk-toggle="target: #detalles" uk-icon="icon: info"></a> </td>
+              <td>RESERVAR</td>
               <td>Lorem</td>
               <td>Lorem ipsum dolor sit amet, consectetur ...</td>
               <td>00/00/00</td>
-              <td>
-                <a uk-toggle="target: #detalles" uk-icon="icon: info"></a>
+              <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore magna aliqua.
               </td>
           </tr>
           <tr>
-              <td>FOL000001</td>
-              <td>PENDIENTE</td>
+              <td>FOL000001 <a uk-toggle="target: #detalles" uk-icon="icon: info"></a> </td>
+              <td>PENDIENTES</td>
               <td>Lorem</td>
               <td>Lorem ipsum dolor sit amet, consectetur ...</td>
               <td>00/00/00</td>
-              <td><a uk-toggle="target: #detalles" uk-icon="icon: info"></a></td>
+              <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore magna aliqua.
+              </td>
+          </tr>
+          <tr>
+              <td>FOL000001 <a uk-toggle="target: #detalles" uk-icon="icon: info"></a></td>
+              <td>PAGADAS</td>
+              <td>Lorem</td>
+              <td>Lorem ipsum dolor sit amet, consectetur ...</td>
+              <td>00/00/00</td>
+              <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore magna aliqua.
+              </td>
           </tr>
         </tbody>
       </table>
     </section>
 
-    <section class="">
+    <section>
       <article id="detalles" uk-offcanvas="mode: push; overlay: true">
         <div class="uk-offcanvas-bar color-gray">
           <button class="uk-offcanvas-close" type="button" uk-close></button>
-            <h1 class="uk-article-title"><a class="uk-link-reset" href="">Heading</a></h1>
-            <p class="uk-article-meta">Written by <a href="#">Super User</a> on 12 April 2012. Posted in <a href="#">Blog</a></p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
+            <h2 class="uk-article-title">Experiencia</h2>
             <div class="uk-grid-small uk-child-width-auto" uk-grid>
                 <div>
-                    <a class="uk-button uk-button-text" href="#">Read more</a>
+                    <p class="uk-article-meta">Folio: <span class="text-white">FOL000001</span>
                 </div>
                 <div>
-                    <a class="uk-button uk-button-text" href="#">5 Comments</a>
+                    <p class="uk-article-meta">Estatus: <span class="text-white">PENDIENTE</span>
                 </div>
+            </div>
+            <div class="uk-margin">
+              <span uk-icon="icon: user"></span>
+              <span class="text-white">Lorem ipsum</span>
+            </div>
+            <div>
+              <span class="uk-margin" uk-icon="icon: mail"></span>
+              <a href="mailto:socios@experimenta.com.mx" class="text-white  uk-button-text">socios@experimenta.com.mx</a>
+            </div>
+            <div>
+              <span class="uk-margin" uk-icon="icon: phone"></span>
+              <a href="tel://015552925707" class="text-white uk-button-text text-decoration-none">01 55 5292-5707</a>
+            </div>
+            <div>
+              <span class="uk-margin" uk-icon="icon: calendar"></span>
+              <span class="text-white">20/MAY/2017</span>
+            </div>
+            <div class="uk-margin-small">
+              <p>Observaciones:</p>
+              <textarea class="uk-textarea" rows="5" placeholder="Textarea"></textarea>
+            </div>
+            <div class="uk-align-right">
+              <button class="uk-button color-green">Guardar</button>
             </div>
         </div>
       </article>
