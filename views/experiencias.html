@@ -12,7 +12,7 @@
  </head>
  <body>
    <header uk-sticky="animation: uk-animation-slide-top">
-     <nav class="uk-padding-small color-orange" uk-navbar="mode: click">
+     <nav class=" color-orange" uk-navbar="mode: click">
        <div class="uk-navbar-left">
          <a class="uk-navbar-item uk-logo" href="home.html"><img src="../assets/img/logo-experimenta/Logo-experimenta-white.svg" alt=""></a>
        </div>
@@ -36,7 +36,7 @@
                          <li class="uk-active"><a href="#"></a></li>
                          <li><a href="datos.html">Datos</a></li>
                          <li><a href="experiencias.html">Experiecias</a></li>
-                         <li><a href="#">Convenio</a></li>
+                         <li><a href="convenio.html">Convenio</a></li>
                      </ul>
                  </div>
              </li>
@@ -44,16 +44,18 @@
          </ul>
      </section>
    </header>
+   
    <section class="uk-padding-large" id="experiencias">
      <div class="uk-heading-line">
          <h2>Experiencias</h2>
      </div>
-     <article class="uk-card uk-card-default uk-grid uk-grid-medium uk-child-width-expand@m">
-       <div>
+     <a href="#modal2" uk-toggle class="uk-button uk-button-primary color-green" type="button">Agregar Experiencia</a>
+     <article class="uk-grid uk-grid-medium uk-child-width-expand@m uk-padding">
+       <div class="uk-card uk-card-default">
          <div class="uk-card-header">
            <div class="uk-flex-middle">
              <div class="uk-width-auto contenedor-img">
-               <img src="../assets/img/fotos-stock/aventura/shutterstock_122485123.jpg">
+               <img src="../assets/img/fotos-stock/Aventura/shutterstock_122485123.jpg">
              </div>
              <h3 class="uk-card-title uk-margin-remove">Experiencia</h3>
              <div class="uk-grid">
@@ -74,12 +76,11 @@
          </div>
        </div>
 
-[10:39] 
-<div>
+       <div class="uk-card uk-card-default">
          <div class="uk-card-header">
            <div class="uk-flex-middle">
              <div class="uk-width-auto contenedor-img">
-               <img src="../assets/img/fotos-stock/aventura/shutterstock_127957634.jpg">
+               <img src="../assets/img/fotos-stock/Aventura/shutterstock_127957634.jpg">
              </div>
              <h3 class="uk-card-title uk-margin-remove">Experiencia</h3>
              <div class="uk-grid">
@@ -100,11 +101,11 @@
          </div>
        </div>
 
-       <div>
+       <div class="uk-card uk-card-default">
          <div class="uk-card-header">
            <div class="uk-flex-middle">
              <div class="uk-width-auto contenedor-img">
-               <img src="../assets/img/fotos-stock/aventura/shutterstock_77683366.jpg">
+               <img src="../assets/img/fotos-stock/Aventura/shutterstock_77683366.jpg">
              </div>
              <h3 class="uk-card-title uk-margin-remove">Experiencia</h3>
              <div class="uk-grid">
@@ -124,33 +125,89 @@
              <a href="#modal" uk-toggle class="uk-button uk-button-text uk-align-right" uk-icon="icon: file-edit"></a>
          </div>
        </div>
-
      </article>
    </section>
 
-[10:39] 
-<section>
+   <section>
      <div id="modal" uk-modal>
          <div class="uk-modal-dialog">
-
              <button class="uk-modal-close-default" type="button" uk-close></button>
-
              <div class="uk-modal-header">
-                 <h2 class="uk-modal-title">Experiencia</h2>
+                 <h2 class="uk-modal-title">Editar</h2>
              </div>
-
-             <div class="uk-modal-body" uk-overflow-auto>
-
-                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-
+             <form class="uk-form-horizontal uk-padding">
+                <div class="">
+                    <label class="uk-form-label" for="form-horizontal-text">Experiencia</label>
+                    <div class="uk-form-controls">
+                        <input class="uk-input" id="form-horizontal-text" type="text" placeholder="Nombre...">
+                    </div>
+                </div>
+                <div class="uk-margin">
+                    <label class="uk-form-label" for="form-horizontal-text">Localicación</label>
+                    <div class="uk-form-controls">
+                        <input class="uk-input" id="form-horizontal-text" type="text" placeholder="Lugar...">
+                    </div>
+                </div>
+                <div class="uk-margin">
+                    <label class="uk-form-label" for="form-horizontal-text">Descripción</label>
+                    <div class="uk-form-controls">
+                      <textarea class="uk-textarea" rows="5" placeholder="Comentario"></textarea>
+                    </div>
+                </div>
+                <div class="uk-margin">
+                    <div class="uk-form-label">Plus Experimenta</div>
+                    <div class="uk-form-controls uk-form-controls-text">
+                        <label><input class="uk-radio" type="radio" name="radio1"> Option 01</label><br>
+                        <label><input class="uk-radio" type="radio" name="radio1"> Option 02</label>
+                    </div>
+                </div>
+            </form>
+             <div class="uk-modal-footer uk-text-right color-gray">
+                 <button class="uk-button uk-button-default uk-modal-close button-style" type="button">Cancelar</button>
+                 <button class="uk-button uk-button-primary button-style" type="button">Actualizar</button>
              </div>
+         </div>
+     </div>
+   </section>
 
-             <div class="uk-modal-footer uk-text-right">
-                 <button class="uk-button uk-button-default uk-modal-close" type="button">Cancelar</button>
-                 <button class="uk-button uk-button-primary" type="button">Actualizar</button>
+   <section>
+     <div id="modal2" uk-modal>
+         <div class="uk-modal-dialog">
+             <button class="uk-modal-close-default" type="button" uk-close></button>
+             <div class="uk-modal-header">
+                 <h2 class="uk-modal-title">Nueva Experiencia</h2>
              </div>
-
+             <form class="uk-form-horizontal uk-padding">
+                <div class="">
+                    <label class="uk-form-label" for="form-horizontal-text">Experiencia</label>
+                    <div class="uk-form-controls">
+                        <input class="uk-input" id="form-horizontal-text" type="text" placeholder="Nombre...">
+                    </div>
+                </div>
+                <div class="uk-margin">
+                    <label class="uk-form-label" for="form-horizontal-text">Localicación</label>
+                    <div class="uk-form-controls">
+                        <input class="uk-input" id="form-horizontal-text" type="text" placeholder="Lugar...">
+                    </div>
+                </div>
+                <div class="uk-margin">
+                    <label class="uk-form-label" for="form-horizontal-text">Descripción</label>
+                    <div class="uk-form-controls">
+                      <textarea class="uk-textarea" rows="5" placeholder="Comentario"></textarea>
+                    </div>
+                </div>
+                <div class="uk-margin">
+                    <div class="uk-form-label">Plus Experimenta</div>
+                    <div class="uk-form-controls uk-form-controls-text">
+                        <label><input class="uk-radio" type="radio" name="radio1"> Option 01</label><br>
+                        <label><input class="uk-radio" type="radio" name="radio1"> Option 02</label>
+                    </div>
+                </div>
+            </form>
+             <div class="uk-modal-footer uk-text-right color-gray">
+                 <button class="uk-button uk-button-default uk-modal-close button-style" type="button">Cancelar</button>
+                 <button class="uk-button uk-button-primary button-style" type="button">Guardar</button>
+             </div>
          </div>
      </div>
    </section>
