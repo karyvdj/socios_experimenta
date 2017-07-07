@@ -1,91 +1,138 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Datos</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.25/css/uikit.min.css"/>
-  <link rel="stylesheet" href="../css/main.css">
-  <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Datos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.25/css/uikit.min.css" />
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
 </head>
+
 <body>
-  <header uk-sticky="animation: uk-animation-slide-top">
-    <nav class="uk-padding-small color-orange" uk-navbar="mode: click">
-      <div class="uk-navbar-left">
-        <a class="uk-navbar-item uk-logo" href="#"><img src="../assets/img/logo-experimenta/Logo-experimenta-white.svg" alt=""></a>
-      </div>
-      <div class="uk-navbar-right">
-        <ul class="uk-navbar-nav uk-iconnav">
-          <li><a href="#">Contacto</a></li>
-          <li>
-            <a title="Cerrar Sesión" uk-tooltip="pos: bottom" href="#" uk-icon="icon: user" ></a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-    <section class="uk-flex uk-flex-center color-gray">
-      <ul class="uk-subnav uk-subnav-divider">
-        <li><a href="#">Reservaciones</a></li>
-        <li><a href="#">Facturas</a></li>
-        <li>
-          <a href="#">Perfil<span uk-icon="icon:  triangle-down"></span></a>
-          <div uk-dropdown="mode: click;">
-            <ul class="uk-nav uk-navbar-dropdown-nav">
-              <li class="uk-active"><a href="#"></a></li>
-              <li><a href="datos.html">Datos</a></li>
-              <li><a href="experiencias.html">Experiecias</a></li>
-              <li><a href="convenio.html">Convenio</a></li>
+    <header uk-sticky="animation: uk-animation-slide-top">
+        <nav class="uk-padding-small color-orange" uk-navbar="mode: click">
+            <div class="uk-navbar-left">
+                <a class="uk-navbar-item uk-logo" href="#"><img src="../assets/img/logo-experimenta/Logo-experimenta-white.svg" alt=""></a>
+            </div>
+            <div class="uk-navbar-right">
+                <ul class="uk-navbar-nav uk-iconnav">
+                    <li><a href="#">Contacto</a></li>
+                    <li>
+                        <a title="Cerrar Sesión" uk-tooltip="pos: bottom" href="#" uk-icon="icon: user"></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <section class="uk-flex uk-flex-center color-gray">
+            <ul class="uk-subnav uk-subnav-divider">
+                <li><a href="#">Reservaciones</a></li>
+                <li><a href="#">Facturas</a></li>
+                <li>
+                    <a href="#">Perfil<span uk-icon="icon:  triangle-down"></span></a>
+                    <div uk-dropdown="mode: click;">
+                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                            <li class="uk-active">
+                                <a href="#"></a>
+                            </li>
+                            <li><a href="datos.html">Datos</a></li>
+                            <li><a href="experiencias.html">Experiecias</a></li>
+                            <li><a href="convenio.html">Convenio</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#">Preguntas</a></li>
             </ul>
-          </div>
-        </li>
-        <li><a href="#">Preguntas</a></li>
-      </ul>
+        </section>
+    </header>
+
+    <section class="uk-width-xxlarge uk-align-center">
+        <h2 class="uk-heading-divider">¡Bienvenido, Andrea!</h2>
+        <article>
+            <h5>MIS DATOS</h5>
+            <a href="#" uk-icon="icon:  file-edit" class="uk-align-right">Editar</a>
+
+            <div class="">
+                <ul class="uk-list uk-width-auto">
+                    <h3>Datos bancarios</h3>
+                    <li>
+                        Beneficiario(razón social):
+                        <p class="uk-text-bold">Grupo Financiero Banamex, S.A. de C.V.</p>
+                    </li>
+                    <li>
+                        Banco:
+                        <p class="uk-text-bold">Banamex</p>
+                    </li>
+                    <li>
+                        Sucursal:
+                        <p class="uk-text-bold"> Av Oaxaca 108, Roma Nte., 06700 Ciudad de México, CDMX</p>
+                    </li>
+                    <li>
+                        No. De cuenta:
+                        <p class="uk-text-bold"> 4540 5712 3456 7890</p>
+                    </li>
+                    <li>
+                        Clabe:
+                        <p class="uk-text-bold"> 454 057 12345678906 3 </p>
+                    </li>
+                </ul>
+            </div>
+
+            <p class="uk-align-right uk-margin-medium-top">2 de 5
+                <a uk-tooltip="pos: bottom" href="datos3.html" class="uk-icon-button uk-margin-small-right color-green text-white" uk-icon="icon:  arrow-right">
+                </a>
+            </p>
+        </article>
     </section>
-  </header>
-
-  <section class="uk-width-xxlarge uk-align-center">
-    <h2 class="uk-heading-divider">¡Bienvenido, Andrea!</h2>
-    <article>
-      <h5>MIS DATOS</h5>
-      <a href="#" uk-icon="icon:  file-edit" class="uk-align-right">Editar</a>
-
-      <div class="">
-        <ul class="uk-list uk-width-auto">
-          <h3>Datos bancarios</h3>
-          <li>
-            Beneficiario(razón social):
-            <p class="uk-text-bold">Grupo Financiero Banamex, S.A. de C.V.</p>
-          </li>
-          <li>
-            Banco:
-            <p class="uk-text-bold">Banamex</p>
-          </li>
-          <li>
-            Sucursal:
-            <p class="uk-text-bold"> Av Oaxaca 108, Roma Nte., 06700 Ciudad de México, CDMX</p>
-          </li>
-          <li>
-            No. De cuenta:
-            <p class="uk-text-bold"> 4540 5712 3456 7890</p>
-          </li>
-          <li>
-            Clabe:
-            <p class="uk-text-bold"> 454 057 12345678906 3 </p>
-          </li>
+    <footer class="color-gray container-footer">
+        <ul class="list-footer list-container">
+            <li class="text-white">EXPERIMENTA</li>
+            <li><a href="" class="text-white">Home</a></li>
+            <li><a href="" class="text-white">¿Quienes Somos?</a></li>
+            <li><a href="#" class="text-white">¿Como funciona?</a></li>
+            <li><a href="#" class="text-white">Recibi un Kit</a></li>
+            <li><a href="#" class="text-white">Blog</a></li>
         </ul>
-      </div>
+        <ul class="text-white">
+            <li class="text-white">SERVICIO AL CLIENTE</li>
+            <li><a class="text-white uk-text-meta">Preguntas Frecuentes</a></li>
+            <li><a class="text-white">Garantia de Servicio</a></li>
+            <li class="text-white uk-text-meta">POLITICAS</li>
+            <li><a class="text-white">Terminos y Condiciones</a></li>
+            <li><a class="text-white">Privacidad</a></li>
+        </ul>
+        <ul>
+            <li class="text-white">SOLUCIONES CORPORATIVAS</li>
+            <li><a href="" class="text-white">Regalos Corporativos</a></li>
+            <li><a href="" class="text-white">Cotiza tu iniciativa</a></li>
+            <li></li>
+        </ul>
+        <div>
+            <p class="text-white newsletter-container">Inscríbete a nuestro Newsletter para recibir grandes ideas...</p>
+            <input type="text">
+            <a href="#" class="uk-button uk-button-default button-style rss-btn uk-button-small">Suscríbete</a>
+            <div class="social-media">
+                <a href="" uk-icon="icon: twitter; ratio: 1.8"></a>
+                <a href="" uk-icon="icon: facebook; ratio: 1.8"></a>
+                <a href="" uk-icon="icon: linkedin; ratio: 1.8"></a>
+                <a href="" uk-icon="icon: youtube; ratio: 1.8"></a>
+                <a href="" uk-icon="icon: rss; ratio: 1.8"></a>
+            </div>
+            <div class="tel">
+                <span uk-icon="icon: phone"></span>
+                <span>5292 5707 / 01 55 5292-5407</span>
+            </div>
+        </div>
 
-      <p class="uk-align-right uk-margin-medium-top">2 de 5
-        <a uk-tooltip="pos: bottom" href="datos3.html" class="uk-icon-button uk-margin-small-right color-green text-white" uk-icon="icon:  arrow-right">
-        </a>
-      </p>
-    </article>
-  </section>
+    </footer>
 
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.25/js/uikit.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.25/js/uikit-icons.min.js"></script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.25/js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.25/js/uikit-icons.min.js"></script>
 </body>
 </html>

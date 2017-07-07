@@ -2,130 +2,157 @@
 <html lang="es">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Factura</title>
+    <link rel="stylesheet" href="../css/footer.css">
     <link rel="shortcut icon" type="image/x-icon" href="../assets/img/logo-experimenta/ico_ex-02.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.25/css/uikit.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.25/css/uikit.min.css" />
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/factura.css">
     <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
-  </head>
-  <body>
+</head>
+
+<body>
     <header uk-sticky="animation: uk-animation-slide-top">
-      <nav class="uk-padding-small color-orange" uk-navbar="mode: click">
-        <div class="uk-navbar-left">
-          <a class="uk-navbar-item uk-logo" href="home.html"><img src="../assets/img/logo-experimenta/Logo-experimenta-white.svg" alt=""></a>
-        </div>
-        <div class="uk-navbar-right">
-          <ul class="uk-navbar-nav uk-iconnav">
-            <li><a href="#">Contacto</a></li>
-            <li>
-              <a title="Cerrar Sesión" uk-tooltip="pos: bottom" href="#" uk-icon="icon: user" ></a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-      <section class="uk-flex uk-flex-center color-gray">
-          <ul class="uk-subnav uk-subnav-divider">
-              <li><a href="reservacion.html">Reservaciones</a></li>
-              <li><a href="factura.html">Facturas</a></li>
-              <li>
-                  <a href="#">Perfil<span uk-icon="icon:  triangle-down"></span></a>
-                  <div uk-dropdown="mode: click;">
-                      <ul class="uk-nav uk-navbar-dropdown-nav">
-                          <li class="uk-active"><a href="#"></a></li>
-                          <li><a href="datos.html">Datos</a></li>
-                          <li><a href="#">Experiecias</a></li>
-                          <li><a href="#">Convenio</a></li>
-                      </ul>
-                  </div>
-              </li>
-              <li><a href="preguntas.html">Preguntas</a></li>
-          </ul>
-      </section>
+        <nav class="uk-padding-small color-orange" uk-navbar="mode: click">
+            <div class="uk-navbar-left">
+                <a class="uk-navbar-item uk-logo" href="home.html"><img src="../assets/img/logo-experimenta/Logo-experimenta-white.svg" alt=""></a>
+            </div>
+            <div class="uk-navbar-right">
+                <ul class="uk-navbar-nav uk-iconnav">
+                    <li><a href="#">Contacto</a></li>
+                    <li>
+                        <a title="Cerrar Sesión" uk-tooltip="pos: bottom" href="#" uk-icon="icon: user"></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <section class="uk-flex uk-flex-center color-gray">
+            <ul class="uk-subnav uk-subnav-divider">
+                <li><a href="reservacion.html">Reservaciones</a></li>
+                <li><a href="factura.html">Facturas</a></li>
+                <li>
+                    <a href="#">Perfil<span uk-icon="icon:  triangle-down"></span></a>
+                    <div uk-dropdown="mode: click;">
+                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                            <li class="uk-active">
+                                <a href="#"></a>
+                            </li>
+                            <li><a href="datos.html">Datos</a></li>
+                            <li><a href="#">Experiecias</a></li>
+                            <li><a href="#">Convenio</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="preguntas.html">Preguntas</a></li>
+            </ul>
+        </section>
     </header>
 
     <section class="uk-padding-large uk-offcanvas-content">
-      <div class="uk-container" id="top">
-        <div class="uk-heading-line">
-            <h2>Facturas</h2>
-        </div>
-        <div class="uk-overflow-auto">
-        	 <div class="uk-align-right">
-              <a class="uk-icon-button uk-margin-small-right color-green text-white" uk-search-icon href="#"></a>
-              <div class="uk-drop" uk-drop="mode: click; pos: left-center; offset: 0">
-                  <form class="uk-search">
-
-                      <input class="uk-search-input" type="search" placeholder="Ingresa el dato a buscar..." autofocus>
-                  </form>
-              </div>
+        <div class="uk-container" id="top">
+            <div class="uk-heading-line">
+                <h2>Facturas</h2>
             </div>
-            <table class="margen uk-table uk-table-hover uk-table-middle uk-table-divider">
-                <thead>
-                	<tr>Mostrando: 5/45</tr>
-                    <tr>
-                        <th class="uk-table-shrink">Select</th>
-                        <th class="uk-table-shrink uk-text-center">Folio</th>
-                        <th class="uk-width-shrink uk-text-center">Compromiso pago</th>
-                        <th class="uk-table-shrink uk-text-center">Importe</th>
-                        <th class="uk-table-shrink uk-text-center">Comprobante</th>
-                        <th class="uk-table-shrink uk-text-center">Detalle</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><class="margen" input class="uk-checkbox" type="checkbox"></td>
-                        <td class="uk-text-center">0054</td>
-                        <td class="uk-text-nowrap uk-text-center"><p>00/00/00</p></td>
-                        <td class="uk-text-nowrap uk-text-center">$00,000.00</td>
-                        <td class="uk-text-nowrap uk-text-center"><a href="#modal-center" uk-toggle uk-icon="icon: search"></a>
-                        <td class="uk-text-nowrap uk-text-center"><a href="#modal-caption" uk-toggle uk-icon="icon: info"></a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><input class="uk-checkbox" type="checkbox"></td>
-                        <td class="uk-text-center">0055</td>
-                        <td class="uk-text-nowrap uk-text-center"><p>00/00/00</p></td>
-                        <td class="uk-text-nowrap uk-text-center">$00,000.00</td>
-                        <td class="uk-text-nowrap uk-text-center"><a href="#modal-center" uk-toggle uk-icon="icon: search"></a>
-                        <td class="uk-text-nowrap uk-text-center"><a href="#modal-caption" uk-toggle uk-icon="icon: info"></a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><input class="uk-checkbox" type="checkbox"></td>
-                        <td class="uk-text-center">0056</td>
-                        <td class="uk-text-nowrap uk-text-center"><p>00/00/00</p></td>
-                        <td class="uk-text-nowrap uk-text-center">$00,000.00</td>
-                        <td class="uk-text-nowrap uk-text-center"><a href="#modal-center" uk-toggle uk-icon="icon: search"></a>
-                        <td class="uk-text-nowrap uk-text-center"><a href="#modal-caption" uk-toggle uk-icon="icon: info"></a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><input class="uk-checkbox" type="checkbox"></td>
-                        <td class="uk-text-center">0057</td>
-                        <td class="uk-text-nowrap uk-text-center"><p>00/00/00</p></td>
-                        <td class="uk-text-nowrap uk-text-center">$00,000.00</td>
-                        <td class="uk-text-nowrap uk-text-center"><a href="#modal-center" uk-toggle uk-icon="icon: search"></a></td>
-                        <td class="uk-text-nowrap uk-text-center"><a href="#modal-caption" uk-toggle uk-icon="icon: info"></a>
-                    </tr>
-                    <tr>
+            <div class="uk-overflow-auto">
+                <div class="uk-align-right">
+                    <a class="uk-icon-button uk-margin-small-right color-green text-white" uk-search-icon href="#"></a>
+                    <div class="uk-drop" uk-drop="mode: click; pos: left-center; offset: 0">
+                        <form class="uk-search">
 
-                        <td><input class="uk-checkbox" type="checkbox"></td>
-                        <td class="uk-text-center">0058</td>
-                        <td class="uk-text-nowrap uk-text-center"><p>00/00/00</p></td>
-                        <td class="uk-text-nowrap uk-text-center">$00,000.00</td>
-                        <td class="uk-text-nowrap uk-text-center"><a href="#modal-center" uk-toggle uk-icon="icon: search"></td>
-                        <td class="uk-text-nowrap uk-text-center"><a href="#modal-caption" uk-toggle uk-icon="icon: info"></a>
-                    </tr>
-                </tbody>
-            </table>
-            <h5 class="uk-text-center">TOTAL: $00,000.00</h5>
-          </div>
-          <div class="uk-margin-medium-top">
-            <a class="uk-button color-green text-white" title="Descargar" href="../assets/img/434-Ej.pdf" download="Facturas">Descargar Facturas</a>
-            <a class="uk-button color-green text-white" title="Descargar">Adjuntar Nueva</a>
-          </div>
+                            <input class="uk-search-input" type="search" placeholder="Ingresa el dato a buscar..." autofocus>
+                        </form>
+                    </div>
+                </div>
+                <table class="margen uk-table uk-table-hover uk-table-middle uk-table-divider">
+                    <thead>
+                        <tr>Mostrando: 5/45</tr>
+                        <tr>
+                            <th class="uk-table-shrink">Select</th>
+                            <th class="uk-table-shrink uk-text-center">Folio</th>
+                            <th class="uk-width-shrink uk-text-center">Compromiso pago</th>
+                            <th class="uk-table-shrink uk-text-center">Importe</th>
+                            <th class="uk-table-shrink uk-text-center">Comprobante</th>
+                            <th class="uk-table-shrink uk-text-center">Detalle</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <class="margen" input class="uk-checkbox" type="checkbox">
+                            </td>
+                            <td class="uk-text-center">0054</td>
+                            <td class="uk-text-nowrap uk-text-center">
+                                <p>00/00/00</p>
+                            </td>
+                            <td class="uk-text-nowrap uk-text-center">$00,000.00</td>
+                            <td class="uk-text-nowrap uk-text-center">
+                                <a href="#modal-center" uk-toggle uk-icon="icon: search"></a>
+                                <td class="uk-text-nowrap uk-text-center">
+                                    <a href="#modal-caption" uk-toggle uk-icon="icon: info"></a>
+                                </td>
+                        </tr>
+                        <tr>
+                            <td><input class="uk-checkbox" type="checkbox"></td>
+                            <td class="uk-text-center">0055</td>
+                            <td class="uk-text-nowrap uk-text-center">
+                                <p>00/00/00</p>
+                            </td>
+                            <td class="uk-text-nowrap uk-text-center">$00,000.00</td>
+                            <td class="uk-text-nowrap uk-text-center">
+                                <a href="#modal-center" uk-toggle uk-icon="icon: search"></a>
+                                <td class="uk-text-nowrap uk-text-center">
+                                    <a href="#modal-caption" uk-toggle uk-icon="icon: info"></a>
+                                </td>
+                        </tr>
+                        <tr>
+                            <td><input class="uk-checkbox" type="checkbox"></td>
+                            <td class="uk-text-center">0056</td>
+                            <td class="uk-text-nowrap uk-text-center">
+                                <p>00/00/00</p>
+                            </td>
+                            <td class="uk-text-nowrap uk-text-center">$00,000.00</td>
+                            <td class="uk-text-nowrap uk-text-center">
+                                <a href="#modal-center" uk-toggle uk-icon="icon: search"></a>
+                                <td class="uk-text-nowrap uk-text-center">
+                                    <a href="#modal-caption" uk-toggle uk-icon="icon: info"></a>
+                                </td>
+                        </tr>
+                        <tr>
+                            <td><input class="uk-checkbox" type="checkbox"></td>
+                            <td class="uk-text-center">0057</td>
+                            <td class="uk-text-nowrap uk-text-center">
+                                <p>00/00/00</p>
+                            </td>
+                            <td class="uk-text-nowrap uk-text-center">$00,000.00</td>
+                            <td class="uk-text-nowrap uk-text-center">
+                                <a href="#modal-center" uk-toggle uk-icon="icon: search"></a>
+                            </td>
+                            <td class="uk-text-nowrap uk-text-center">
+                                <a href="#modal-caption" uk-toggle uk-icon="icon: info"></a>
+                        </tr>
+                        <tr>
+
+                            <td><input class="uk-checkbox" type="checkbox"></td>
+                            <td class="uk-text-center">0058</td>
+                            <td class="uk-text-nowrap uk-text-center">
+                                <p>00/00/00</p>
+                            </td>
+                            <td class="uk-text-nowrap uk-text-center">$00,000.00</td>
+                            <td class="uk-text-nowrap uk-text-center">
+                                <a href="#modal-center" uk-toggle uk-icon="icon: search"></td>
+                            <td class="uk-text-nowrap uk-text-center">
+                                <a href="#modal-caption" uk-toggle uk-icon="icon: info"></a>
+                        </tr>
+                    </tbody>
+                </table>
+                <h5 class="uk-text-center">TOTAL: $00,000.00</h5>
+            </div>
+            <div class="uk-margin-medium-top">
+                <a class="uk-button color-green text-white" title="Descargar" href="../assets/img/434-Ej.pdf" download="Facturas">Descargar Facturas</a>
+                <a class="uk-button color-green text-white" title="Descargar">Adjuntar Nueva</a>
+            </div>
         </div>
         <div id="modal-center" uk-modal="center: true">
             <div class="uk-modal-dialog">
@@ -147,9 +174,52 @@
             </div>
         </div>
     </section>
+    <footer class="color-gray container-footer">
+        <ul class="list-footer list-container">
+            <li class="text-white">EXPERIMENTA</li>
+            <li><a href="" class="text-white">Home</a></li>
+            <li><a href="" class="text-white">¿Quienes Somos?</a></li>
+            <li><a href="#" class="text-white">¿Como funciona?</a></li>
+            <li><a href="#" class="text-white">Recibi un Kit</a></li>
+            <li><a href="#" class="text-white">Blog</a></li>
+        </ul>
+        <ul class="text-white">
+            <li class="text-white">SERVICIO AL CLIENTE</li>
+            <li><a class="text-white uk-text-meta">Preguntas Frecuentes</a></li>
+            <li><a class="text-white">Garantia de Servicio</a></li>
+            <li class="text-white uk-text-meta">POLITICAS</li>
+            <li><a class="text-white">Terminos y Condiciones</a></li>
+            <li><a class="text-white">Privacidad</a></li>
+        </ul>
+        <ul>
+            <li class="text-white">SOLUCIONES CORPORATIVAS</li>
+            <li><a href="" class="text-white">Regalos Corporativos</a></li>
+            <li><a href="" class="text-white">Cotiza tu iniciativa</a></li>
+            <li></li>
+        </ul>
+        <div>
+            <p class="text-white newsletter-container">Inscríbete a nuestro Newsletter para recibir grandes ideas...</p>
+            <input type="text">
+            <a href="#" class="uk-button uk-button-default button-style rss-btn uk-button-small">Suscríbete</a>
+            <div class="social-media">
+                <a href="" uk-icon="icon: twitter; ratio: 1.8"></a>
+                <a href="" uk-icon="icon: facebook; ratio: 1.8"></a>
+                <a href="" uk-icon="icon: linkedin; ratio: 1.8"></a>
+                <a href="" uk-icon="icon: youtube; ratio: 1.8"></a>
+                <a href="" uk-icon="icon: rss; ratio: 1.8"></a>
+            </div>
+            <div class="tel">
+                <span uk-icon="icon: phone"></span>
+                <span>5292 5707 / 01 55 5292-5407</span>
+            </div>
+        </div>
+
+    </footer>
+
+
 
     <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.25/js/uikit.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.25/js/uikit-icons.min.js"></script>
-  </body>
+</body>
 </html>

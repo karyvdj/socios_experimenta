@@ -1,219 +1,263 @@
 <!DOCTYPE html>
 <html lang="es">
  <head>
-   <meta charset="utf-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <title>Reservaciones</title>
-   <link rel="shortcut icon" type="image/x-icon" href="../assets/img/logo-experimenta/ico_ex-02.png">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.25/css/uikit.min.css"/>
-   <link rel="stylesheet" href="../css/main.css">
-   <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
- </head>
- <body>
-   <header uk-sticky="animation: uk-animation-slide-top">
-     <nav class="uk-padding-small color-orange" uk-navbar="mode: click">
-       <div class="uk-navbar-left">
-         <a class="uk-navbar-item uk-logo" href="home.html"><img src="../assets/img/logo-experimenta/Logo-experimenta-white.svg" alt=""></a>
-       </div>
-       <div class="uk-navbar-right">
-         <ul class="uk-navbar-nav uk-iconnav">
-           <li><a href="#">Contacto</a></li>
-           <li>
-             <a title="Cerrar Sesión" uk-tooltip="pos: bottom" href="#" uk-icon="icon: user" ></a>
-           </li>
-         </ul>
-       </div>
-     </nav>
-     <section class="uk-flex uk-flex-center color-gray">
-         <ul class="uk-subnav uk-subnav-divider">
-             <li><a href="reservacion.html">Reservacioness</a></li>
-             <li><a href="factura.html">Facturas</a></li>
-             <li>
-                 <a href="#">Perfil<span uk-icon="icon:  triangle-down"></span></a>
-                 <div uk-dropdown="mode: click;">
-                     <ul class="uk-nav uk-navbar-dropdown-nav">
-                         <li class="uk-active"><a href="#"></a></li>
-                         <li><a href="datos.html">Datos</a></li>
-                         <li><a href="experiencias.html">Experiecias</a></li>
-                         <li><a href="convenio.html">Convenio</a></li>
-                     </ul>
-                 </div>
-             </li>
-             <li><a href="preguntas.html">Preguntas</a></li>
-         </ul>
-     </section>
-   </header>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Reservaciones</title>
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/img/logo-experimenta/ico_ex-02.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.25/css/uikit.min.css" />
+    <link rel="stylesheet" href="../css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+</head>
 
-   <section class="uk-padding-large" id="experiencias">
-     <div class="uk-heading-line">
-         <h2>Experiencias</h2>
-     </div>
-     <a href="#modal2" uk-toggle class="uk-button uk-button-primary color-green" type="button">Agregar Experiencia</a>
-     <article class="uk-grid uk-grid-medium uk-child-width-expand@m uk-padding">
-       <div class="uk-card uk-card-default">
-         <div class="uk-card-header">
-           <div class="uk-flex-middle">
-             <div class="uk-width-auto contenedor-img">
-               <img src="../assets/img/fotos-stock/Aventura/shutterstock_122485123.jpg">
-             </div>
-             <h3 class="uk-card-title uk-margin-remove">Experiencia</h3>
-             <div class="uk-grid">
-               <p class="uk-text-meta  uk-margin-remove-bottom">
-                 <span class="uk-text-meta" uk-icon="icon: location"></span>
-                 Cancun, Quintana Roo
-               </p>
-               <p class="uk-text-meta">Costo: <b>$500</b></p>
-             </div>
-           </div>
-         </div>
-         <div class="uk-card-body">
-           <h4>Descripción</h4>
-           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-         </div>
-         <div class="uk-card-footer">
-             <a href="#modal" uk-toggle class="uk-button uk-button-text uk-align-right" uk-icon="icon: file-edit"></a>
-         </div>
-       </div>
+<body>
+    <header uk-sticky="animation: uk-animation-slide-top">
+        <nav class="uk-padding-small color-orange" uk-navbar="mode: click">
+            <div class="uk-navbar-left">
+                <a class="uk-navbar-item uk-logo" href="home.html"><img src="../assets/img/logo-experimenta/Logo-experimenta-white.svg" alt=""></a>
+            </div>
+            <div class="uk-navbar-right">
+                <ul class="uk-navbar-nav uk-iconnav">
+                    <li><a href="#">Contacto</a></li>
+                    <li>
+                        <a title="Cerrar Sesión" uk-tooltip="pos: bottom" href="#" uk-icon="icon: user"></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <section class="uk-flex uk-flex-center color-gray">
+            <ul class="uk-subnav uk-subnav-divider">
+                <li><a href="reservacion.html">Reservacioness</a></li>
+                <li><a href="factura.html">Facturas</a></li>
+                <li>
+                    <a href="#">Perfil<span uk-icon="icon:  triangle-down"></span></a>
+                    <div uk-dropdown="mode: click;">
+                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                            <li class="uk-active">
+                                <a href="#"></a>
+                            </li>
+                            <li><a href="datos.html">Datos</a></li>
+                            <li><a href="experiencias.html">Experiecias</a></li>
+                            <li><a href="convenio.html">Convenio</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="preguntas.html">Preguntas</a></li>
+            </ul>
+        </section>
+    </header>
 
-       <div class="uk-card uk-card-default">
-         <div class="uk-card-header">
-           <div class="uk-flex-middle">
-             <div class="uk-width-auto contenedor-img">
-               <img src="../assets/img/fotos-stock/Aventura/shutterstock_127957634.jpg">
-             </div>
-             <h3 class="uk-card-title uk-margin-remove">Experiencia</h3>
-             <div class="uk-grid">
-               <p class="uk-text-meta  uk-margin-remove-bottom">
-                 <span class="uk-text-meta" uk-icon="icon: location"></span>
-                 Cancun, Quintana Roo
-               </p>
-               <p class="uk-text-meta">Costo: <b>$500</b></p>
-             </div>
-           </div>
-         </div>
-         <div class="uk-card-body">
-           <h4>Descripción</h4>
-           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-         </div>
-         <div class="uk-card-footer">
-             <a href="#modal" uk-toggle class="uk-button uk-button-text uk-align-right" uk-icon="icon: file-edit"></a>
-         </div>
-       </div>
+    <section class="uk-padding-large" id="experiencias">
+        <div class="uk-heading-line">
+            <h2>Experiencias</h2>
+        </div>
+        <a href="#modal2" uk-toggle class="uk-button uk-button-primary color-green" type="button">Agregar Experiencia</a>
+        <article class="uk-grid uk-grid-medium uk-child-width-expand@m uk-padding">
+            <div class="uk-card uk-card-default">
+                <div class="uk-card-header">
+                    <div class="uk-flex-middle">
+                        <div class="uk-width-auto contenedor-img">
+                            <img src="../assets/img/fotos-stock/Aventura/shutterstock_122485123.jpg">
+                        </div>
+                        <h3 class="uk-card-title uk-margin-remove">Experiencia</h3>
+                        <div class="uk-grid">
+                            <p class="uk-text-meta  uk-margin-remove-bottom">
+                                <span class="uk-text-meta" uk-icon="icon: location"></span> Cancun, Quintana Roo
+                            </p>
+                            <p class="uk-text-meta">Costo: <b>$500</b></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-card-body">
+                    <h4>Descripción</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                </div>
+                <div class="uk-card-footer">
+                    <a href="#modal" uk-toggle class="uk-button uk-button-text uk-align-right" uk-icon="icon: file-edit"></a>
+                </div>
+            </div>
 
-       <div class="uk-card uk-card-default">
-         <div class="uk-card-header">
-           <div class="uk-flex-middle">
-             <div class="uk-width-auto contenedor-img">
-               <img src="../assets/img/fotos-stock/Aventura/shutterstock_77683366.jpg">
-             </div>
-             <h3 class="uk-card-title uk-margin-remove">Experiencia</h3>
-             <div class="uk-grid">
-               <p class="uk-text-meta  uk-margin-remove-bottom">
-                 <span class="uk-text-meta" uk-icon="icon: location"></span>
-                 Cancun, Quintana Roo
-               </p>
-               <p class="uk-text-meta">Costo: <b>$500</b></p>
-             </div>
-           </div>
-         </div>
-         <div class="uk-card-body">
-           <h4>Descripción</h4>
-           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-         </div>
-         <div class="uk-card-footer">
-             <a href="#modal" uk-toggle class="uk-button uk-button-text uk-align-right" uk-icon="icon: file-edit"></a>
-         </div>
-       </div>
-     </article>
-   </section>
+            <div class="uk-card uk-card-default">
+                <div class="uk-card-header">
+                    <div class="uk-flex-middle">
+                        <div class="uk-width-auto contenedor-img">
+                            <img src="../assets/img/fotos-stock/Aventura/shutterstock_127957634.jpg">
+                        </div>
+                        <h3 class="uk-card-title uk-margin-remove">Experiencia</h3>
+                        <div class="uk-grid">
+                            <p class="uk-text-meta  uk-margin-remove-bottom">
+                                <span class="uk-text-meta" uk-icon="icon: location"></span> Cancun, Quintana Roo
+                            </p>
+                            <p class="uk-text-meta">Costo: <b>$500</b></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-card-body">
+                    <h4>Descripción</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                </div>
+                <div class="uk-card-footer">
+                    <a href="#modal" uk-toggle class="uk-button uk-button-text uk-align-right" uk-icon="icon: file-edit"></a>
+                </div>
+            </div>
 
-   <section>
-     <div id="modal" uk-modal>
-         <div class="uk-modal-dialog">
-             <button class="uk-modal-close-default" type="button" uk-close></button>
-             <div class="uk-modal-header">
-                 <h2 class="uk-modal-title">Editar</h2>
-             </div>
-             <form class="uk-form-horizontal uk-padding">
-                <div class="">
-                    <label class="uk-form-label" for="form-horizontal-text">Experiencia</label>
-                    <div class="uk-form-controls">
-                        <input class="uk-input" id="form-horizontal-text" type="text" placeholder="Nombre...">
+            <div class="uk-card uk-card-default">
+                <div class="uk-card-header">
+                    <div class="uk-flex-middle">
+                        <div class="uk-width-auto contenedor-img">
+                            <img src="../assets/img/fotos-stock/Aventura/shutterstock_77683366.jpg">
+                        </div>
+                        <h3 class="uk-card-title uk-margin-remove">Experiencia</h3>
+                        <div class="uk-grid">
+                            <p class="uk-text-meta  uk-margin-remove-bottom">
+                                <span class="uk-text-meta" uk-icon="icon: location"></span> Cancun, Quintana Roo
+                            </p>
+                            <p class="uk-text-meta">Costo: <b>$500</b></p>
+                        </div>
                     </div>
                 </div>
-                <div class="uk-margin">
-                    <label class="uk-form-label" for="form-horizontal-text">Localicación</label>
-                    <div class="uk-form-controls">
-                        <input class="uk-input" id="form-horizontal-text" type="text" placeholder="Lugar...">
-                    </div>
+                <div class="uk-card-body">
+                    <h4>Descripción</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
                 </div>
-                <div class="uk-margin">
-                    <label class="uk-form-label" for="form-horizontal-text">Descripción</label>
-                    <div class="uk-form-controls">
-                      <textarea class="uk-textarea" rows="5" placeholder="Comentario"></textarea>
-                    </div>
+                <div class="uk-card-footer">
+                    <a href="#modal" uk-toggle class="uk-button uk-button-text uk-align-right" uk-icon="icon: file-edit"></a>
                 </div>
-                <div class="uk-margin">
-                    <div class="uk-form-label">Plus Experimenta</div>
-                    <div class="uk-form-controls uk-form-controls-text">
-                        <label><input class="uk-radio" type="radio" name="radio1"> Option 01</label><br>
-                        <label><input class="uk-radio" type="radio" name="radio1"> Option 02</label>
-                    </div>
-                </div>
-            </form>
-             <div class="uk-modal-footer uk-text-right color-gray">
-                 <button class="uk-button uk-button-default uk-modal-close button-style" type="button">Cancelar</button>
-                 <button class="uk-button uk-button-primary button-style" type="button">Actualizar</button>
-             </div>
-         </div>
-     </div>
-   </section>
+            </div>
+        </article>
+    </section>
 
-   <section>
-     <div id="modal2" uk-modal>
-         <div class="uk-modal-dialog">
-             <button class="uk-modal-close-default" type="button" uk-close></button>
-             <div class="uk-modal-header">
-                 <h2 class="uk-modal-title">Nueva Experiencia</h2>
-             </div>
-             <form class="uk-form-horizontal uk-padding">
-                <div class="">
-                    <label class="uk-form-label" for="form-horizontal-text">Experiencia</label>
-                    <div class="uk-form-controls">
-                        <input class="uk-input" id="form-horizontal-text" type="text" placeholder="Nombre...">
-                    </div>
+    <section>
+        <div id="modal" uk-modal>
+            <div class="uk-modal-dialog">
+                <button class="uk-modal-close-default" type="button" uk-close></button>
+                <div class="uk-modal-header">
+                    <h2 class="uk-modal-title">Editar</h2>
                 </div>
-                <div class="uk-margin">
-                    <label class="uk-form-label" for="form-horizontal-text">Localicación</label>
-                    <div class="uk-form-controls">
-                        <input class="uk-input" id="form-horizontal-text" type="text" placeholder="Lugar...">
+                <form class="uk-form-horizontal uk-padding">
+                    <div class="">
+                        <label class="uk-form-label" for="form-horizontal-text">Experiencia</label>
+                        <div class="uk-form-controls">
+                            <input class="uk-input" id="form-horizontal-text" type="text" placeholder="Nombre...">
+                        </div>
                     </div>
-                </div>
-                <div class="uk-margin">
-                    <label class="uk-form-label" for="form-horizontal-text">Descripción</label>
-                    <div class="uk-form-controls">
-                      <textarea class="uk-textarea" rows="5" placeholder="Comentario"></textarea>
+                    <div class="uk-margin">
+                        <label class="uk-form-label" for="form-horizontal-text">Localicación</label>
+                        <div class="uk-form-controls">
+                            <input class="uk-input" id="form-horizontal-text" type="text" placeholder="Lugar...">
+                        </div>
                     </div>
-                </div>
-                <div class="uk-margin">
-                    <div class="uk-form-label">Plus Experimenta</div>
-                    <div class="uk-form-controls uk-form-controls-text">
-                        <label><input class="uk-radio" type="radio" name="radio1"> Option 01</label><br>
-                        <label><input class="uk-radio" type="radio" name="radio1"> Option 02</label>
+                    <div class="uk-margin">
+                        <label class="uk-form-label" for="form-horizontal-text">Descripción</label>
+                        <div class="uk-form-controls">
+                            <textarea class="uk-textarea" rows="5" placeholder="Comentario"></textarea>
+                        </div>
                     </div>
+                    <div class="uk-margin">
+                        <div class="uk-form-label">Plus Experimenta</div>
+                        <div class="uk-form-controls uk-form-controls-text">
+                            <label><input class="uk-radio" type="radio" name="radio1"> Option 01</label><br>
+                            <label><input class="uk-radio" type="radio" name="radio1"> Option 02</label>
+                        </div>
+                    </div>
+                </form>
+                <div class="uk-modal-footer uk-text-right color-gray">
+                    <button class="uk-button uk-button-default uk-modal-close button-style" type="button">Cancelar</button>
+                    <button class="uk-button uk-button-primary button-style" type="button">Actualizar</button>
                 </div>
-            </form>
-             <div class="uk-modal-footer uk-text-right color-gray">
-                 <button class="uk-button uk-button-default uk-modal-close button-style" type="button">Cancelar</button>
-                 <button class="uk-button uk-button-primary button-style" type="button">Guardar</button>
-             </div>
-         </div>
-     </div>
-   </section>
+            </div>
+        </div>
+    </section>
 
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.25/js/uikit.min.js"></script>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.25/js/uikit-icons.min.js"></script>
- </body>
+    <section>
+        <div id="modal2" uk-modal>
+            <div class="uk-modal-dialog">
+                <button class="uk-modal-close-default" type="button" uk-close></button>
+                <div class="uk-modal-header">
+                    <h2 class="uk-modal-title">Nueva Experiencia</h2>
+                </div>
+                <form class="uk-form-horizontal uk-padding">
+                    <div class="">
+                        <label class="uk-form-label" for="form-horizontal-text">Experiencia</label>
+                        <div class="uk-form-controls">
+                            <input class="uk-input" id="form-horizontal-text" type="text" placeholder="Nombre...">
+                        </div>
+                    </div>
+                    <div class="uk-margin">
+                        <label class="uk-form-label" for="form-horizontal-text">Localicación</label>
+                        <div class="uk-form-controls">
+                            <input class="uk-input" id="form-horizontal-text" type="text" placeholder="Lugar...">
+                        </div>
+                    </div>
+                    <div class="uk-margin">
+                        <label class="uk-form-label" for="form-horizontal-text">Descripción</label>
+                        <div class="uk-form-controls">
+                            <textarea class="uk-textarea" rows="5" placeholder="Comentario"></textarea>
+                        </div>
+                    </div>
+                    <div class="uk-margin">
+                        <div class="uk-form-label">Plus Experimenta</div>
+                        <div class="uk-form-controls uk-form-controls-text">
+                            <label><input class="uk-radio" type="radio" name="radio1"> Option 01</label><br>
+                            <label><input class="uk-radio" type="radio" name="radio1"> Option 02</label>
+                        </div>
+                    </div>
+                </form>
+                <div class="uk-modal-footer uk-text-right color-gray">
+                    <button class="uk-button uk-button-default uk-modal-close button-style" type="button">Cancelar</button>
+                    <button class="uk-button uk-button-primary button-style" type="button">Guardar</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="color-gray container-footer">
+        <ul class="list-footer list-container">
+            <li class="text-white">EXPERIMENTA</li>
+            <li><a href="" class="text-white">Home</a></li>
+            <li><a href="" class="text-white">¿Quienes Somos?</a></li>
+            <li><a href="#" class="text-white">¿Como funciona?</a></li>
+            <li><a href="#" class="text-white">Recibi un Kit</a></li>
+            <li><a href="#" class="text-white">Blog</a></li>
+        </ul>
+        <ul class="text-white">
+            <li class="text-white">SERVICIO AL CLIENTE</li>
+            <li><a class="text-white uk-text-meta">Preguntas Frecuentes</a></li>
+            <li><a class="text-white">Garantia de Servicio</a></li>
+            <li class="text-white uk-text-meta">POLITICAS</li>
+            <li><a class="text-white">Terminos y Condiciones</a></li>
+            <li><a class="text-white">Privacidad</a></li>
+        </ul>
+        <ul>
+            <li class="text-white">SOLUCIONES CORPORATIVAS</li>
+            <li><a href="" class="text-white">Regalos Corporativos</a></li>
+            <li><a href="" class="text-white">Cotiza tu iniciativa</a></li>
+            <li></li>
+        </ul>
+        <div>
+            <p class="text-white newsletter-container">Inscríbete a nuestro Newsletter para recibir grandes ideas...</p>
+            <input type="text">
+            <a href="#" class="uk-button uk-button-default button-style rss-btn uk-button-small">Suscríbete</a>
+            <div class="social-media">
+                <a href="" uk-icon="icon: twitter; ratio: 1.8"></a>
+                <a href="" uk-icon="icon: facebook; ratio: 1.8"></a>
+                <a href="" uk-icon="icon: linkedin; ratio: 1.8"></a>
+                <a href="" uk-icon="icon: youtube; ratio: 1.8"></a>
+                <a href="" uk-icon="icon: rss; ratio: 1.8"></a>
+            </div>
+            <div class="tel">
+                <span uk-icon="icon: phone"></span>
+                <span>5292 5707 / 01 55 5292-5407</span>
+            </div>
+        </div>
+
+    </footer>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.25/js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.25/js/uikit-icons.min.js"></script>
+</body>
 </html>
