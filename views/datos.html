@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Datos</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.25/css/uikit.min.css"/>
+  <link rel="stylesheet" href="../css/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+</head>
+<body>
+  <header uk-sticky="animation: uk-animation-slide-top">
+    <nav class="uk-padding-small color-orange" uk-navbar="mode: click">
+      <div class="uk-navbar-left">
+        <a class="uk-navbar-item uk-logo" href="#"><img src="../assets/img/logo-experimenta/Logo-experimenta-white.svg" alt=""></a>
+      </div>
+      <div class="uk-navbar-right">
+        <ul class="uk-navbar-nav uk-iconnav">
+          <li><a href="#">Contacto</a></li>
+          <li>
+            <a title="Cerrar Sesión" uk-tooltip="pos: bottom" href="#" uk-icon="icon: user" ></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <section class="uk-flex uk-flex-center color-gray">
+      <ul class="uk-subnav uk-subnav-divider">
+        <li><a href="#">Reservaciones</a></li>
+        <li><a href="#">Facturas</a></li>
+        <li>
+          <a href="#">Perfil<span uk-icon="icon:  triangle-down"></span></a>
+          <div uk-dropdown="mode: click;">
+            <ul class="uk-nav uk-navbar-dropdown-nav">
+              <li class="uk-active"><a href="#"></a></li>
+              <li><a href="#">Datos</a></li>
+              <li><a href="#">Experiecias</a></li>
+              <li><a href="#">Convenio</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="#">Preguntas</a></li>
+      </ul>
+    </section>
+  </header>
+
+  <section class="uk-width-xxlarge uk-align-center">
+    <h2 class="uk-heading-divider">¡Bienvenido, Andrea!</h2>
+    <article>
+      <h4>MIS DATOS</h4>
+      <div class="uk-grid">
+        <ul class="uk-list uk-width-auto">
+          <h4>Datos comerciales</h4>
+          <li>
+            Razón Social
+            <a href="#" uk-icon="icon: chevron-right" class="uk-align-right"></a>
+          </li>
+          <li>
+            RFC
+            <a href="#" uk-icon="icon: chevron-right" class="uk-align-right"></a>
+          </li>
+          <li>
+            Domicilio Fiscal
+            <a href="#" uk-icon="icon: chevron-right" class="uk-align-right"></a>
+          </li>
+          <li>
+            Domicilio de la(s) experiencia (s)
+            <a href="#" uk-icon="icon: chevron-right" class="uk-align-right"></a>
+          </li>
+        </ul>
+
+        <ul class="uk-list uk-width-auto">
+          <h4>Datos bancarios</h4>
+          <li>
+            Beneficiario (razón social)
+            <a href="#" uk-icon="icon: chevron-right" class="uk-align-right"></a>
+          </li>
+          <li>
+            Banco
+            <a href="#" uk-icon="icon: chevron-right" class="uk-align-right"></a>
+          </li>
+          <li>
+            Sucursal
+            <a href="#" uk-icon="icon: chevron-right" class="uk-align-right"></a>
+          </li>
+          <li>
+            No. De Cuenta
+            <a href="#" uk-icon="icon: chevron-right" class="uk-align-right"></a>
+          </li>
+          <li>
+            Clabe
+            <a href="#" uk-icon="icon: chevron-right" class="uk-align-right"></a>
+          </li>
+        </ul>
+      </div>
+
+      <p class="uk-align-right uk-margin-medium-top">Experiencias
+        <a uk-tooltip="pos: bottom" href="#" class="uk-icon-button uk-margin-small-right color-green text-white" uk-icon="icon:  arrow-right">
+        </a>
+      </p>
+    </article>
+  </section>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.25/js/uikit.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.25/js/uikit-icons.min.js"></script>
+</body>
+</html>
