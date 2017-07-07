@@ -46,112 +46,110 @@
       </section>
     </header>
 
-
-
-<div class="uk-container" id="top">    
-
-    <div class="uk-overflow-auto">
-    	 <div class="uk-align-right">
-            <a class="uk-icon-button uk-margin-small-right color-green text-white" uk-search-icon href="#"></a>
-            <div class="uk-drop" uk-drop="mode: click; pos: left-center; offset: 0">
-                <form class="uk-search">
-
-                    <input class="uk-search-input" type="search" placeholder="Buscar..." autofocus>
-                </form>
-            </div>
-          </div>
-
-    <table class="margen uk-table uk-table-hover uk-table-middle uk-table-divider">
-        <thead>
-        	<tr>Mostrando: 5/45</tr>
-            <tr>
-                <th class="uk-table-shrink">Select</th>
-                <th class="uk-table-shrink uk-text-center">Folio</th>
-                <th class="uk-width-shrink uk-text-center">Compromiso pago</th>
-                <th class="uk-table-shrink uk-text-center">Importe</th>
-                <th class="uk-table-shrink uk-text-center">Comprobante</th>
-                <th class="uk-table-shrink uk-text-center">Detalle</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td><class="margen" input class="uk-checkbox" type="checkbox"></td>
-                <td class="uk-text-center">0054</td>
-                <td class="uk-text-nowrap uk-text-center"><p>00/00/00</p></td>
-                <td class="uk-text-nowrap uk-text-center">$00,000.00</td>
-                <td class="uk-text-nowrap uk-text-center"><a href="#modal-center" uk-toggle uk-icon="icon: search"></a>
-                <td class="uk-text-nowrap uk-text-center"><a href="#modal-caption" uk-toggle uk-icon="icon: info"></a>
-                </td>
-            </tr>
-            <tr>
-                <td><input class="uk-checkbox" type="checkbox"></td>
-                <td class="uk-text-center">0055</td>
-                <td class="uk-text-nowrap uk-text-center"><p>00/00/00</p></td>
-                <td class="uk-text-nowrap uk-text-center">$00,000.00</td>
-                <td class="uk-text-nowrap uk-text-center"><a href="#modal-center" uk-toggle uk-icon="icon: search"></a>
-                <td class="uk-text-nowrap uk-text-center"><a href="#modal-caption" uk-toggle uk-icon="icon: info"></a>
-                </td>
-            </tr>
-            <tr>
-                <td><input class="uk-checkbox" type="checkbox"></td>
-                <td class="uk-text-center">0056</td>
-                <td class="uk-text-nowrap uk-text-center"><p>00/00/00</p></td>
-                <td class="uk-text-nowrap uk-text-center">$00,000.00</td>
-                <td class="uk-text-nowrap uk-text-center"><a href="#modal-center" uk-toggle uk-icon="icon: search"></a>
-                <td class="uk-text-nowrap uk-text-center"><a href="#modal-caption" uk-toggle uk-icon="icon: info"></a>
-                </td>
-            </tr>
-            <tr>
-                <td><input class="uk-checkbox" type="checkbox"></td>
-                <td class="uk-text-center">0057</td>
-                <td class="uk-text-nowrap uk-text-center"><p>00/00/00</p></td>
-                <td class="uk-text-nowrap uk-text-center">$00,000.00</td>
-                <td class="uk-text-nowrap uk-text-center"><a href="#modal-center" uk-toggle uk-icon="icon: search"></a></td>
-                <td class="uk-text-nowrap uk-text-center"><a href="#modal-caption" uk-toggle uk-icon="icon: info"></a>
-            </tr>
-            <tr>
-
-                <td><input class="uk-checkbox" type="checkbox"></td>
-                <td class="uk-text-center">0058</td>
-                <td class="uk-text-nowrap uk-text-center"><p>00/00/00</p></td>
-                <td class="uk-text-nowrap uk-text-center">$00,000.00</td>
-                <td class="uk-text-nowrap uk-text-center"><a href="#modal-center" uk-toggle uk-icon="icon: search"></td>
-                <td class="uk-text-nowrap uk-text-center"><a href="#modal-caption" uk-toggle uk-icon="icon: info"></a>
-            </tr>  
-        </tbody>
-    </table>
-   <h5 class="uk-text-center">TOTAL: $00,000.00</h5>
-       </div>
-    <a class="uk-button color-orange text-white" title="Descargar" href="../assets/img/434-Ej.pdf" download="Facturas">Descargar Facturas</a>
-    <a class="uk-button color-orange text-white" title="Descargar">Adjuntar Nueva</a>
-</div>
-
-
-<div id="modal-center" uk-modal="center: true">
-    <div class="uk-modal-dialog">
-        <button class="uk-modal-close-outside" type="button" uk-close></button>
-        <img src="../assets/img/comprobante.png" alt="">
-    </div>
-</div>
-
-
-<div id="modal-caption" uk-modal="center: true">
-    <div class="uk-modal-dialog">
-        <button class="uk-modal-close-default" type="button" uk-close></button>
-        <div class="uk-modal-body">
-            <span>Folio: </span> <span>0055</span><br>
-            <span>Cliente: </span> <span>Miguel Duarte</span><br>
-            <span>Fecha de experiencia:</span> <span>03/07/17</span><br>
-            <span>Estatus: </span><span>Por pagar</span><br>
-            <span>Compromiso pago: </span> <span>01/09/17</span>
+    <section class="uk-padding-large uk-offcanvas-content">
+      <div class="uk-container" id="top">
+        <div class="uk-heading-line">
+            <h2>Facturas</h2>
         </div>
-        <div class="uk-modal-caption">Detalle de Factura</div>
-    </div>
-</div>
-	
-</body>
-<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.25/js/uikit.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.25/js/uikit-icons.min.js"></script>
+        <div class="uk-overflow-auto">
+        	 <div class="uk-align-right">
+              <a class="uk-icon-button uk-margin-small-right color-green text-white" uk-search-icon href="#"></a>
+              <div class="uk-drop" uk-drop="mode: click; pos: left-center; offset: 0">
+                  <form class="uk-search">
 
+                      <input class="uk-search-input" type="search" placeholder="Ingresa el dato a buscar..." autofocus>
+                  </form>
+              </div>
+            </div>
+            <table class="margen uk-table uk-table-hover uk-table-middle uk-table-divider">
+                <thead>
+                	<tr>Mostrando: 5/45</tr>
+                    <tr>
+                        <th class="uk-table-shrink">Select</th>
+                        <th class="uk-table-shrink uk-text-center">Folio</th>
+                        <th class="uk-width-shrink uk-text-center">Compromiso pago</th>
+                        <th class="uk-table-shrink uk-text-center">Importe</th>
+                        <th class="uk-table-shrink uk-text-center">Comprobante</th>
+                        <th class="uk-table-shrink uk-text-center">Detalle</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><class="margen" input class="uk-checkbox" type="checkbox"></td>
+                        <td class="uk-text-center">0054</td>
+                        <td class="uk-text-nowrap uk-text-center"><p>00/00/00</p></td>
+                        <td class="uk-text-nowrap uk-text-center">$00,000.00</td>
+                        <td class="uk-text-nowrap uk-text-center"><a href="#modal-center" uk-toggle uk-icon="icon: search"></a>
+                        <td class="uk-text-nowrap uk-text-center"><a href="#modal-caption" uk-toggle uk-icon="icon: info"></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input class="uk-checkbox" type="checkbox"></td>
+                        <td class="uk-text-center">0055</td>
+                        <td class="uk-text-nowrap uk-text-center"><p>00/00/00</p></td>
+                        <td class="uk-text-nowrap uk-text-center">$00,000.00</td>
+                        <td class="uk-text-nowrap uk-text-center"><a href="#modal-center" uk-toggle uk-icon="icon: search"></a>
+                        <td class="uk-text-nowrap uk-text-center"><a href="#modal-caption" uk-toggle uk-icon="icon: info"></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input class="uk-checkbox" type="checkbox"></td>
+                        <td class="uk-text-center">0056</td>
+                        <td class="uk-text-nowrap uk-text-center"><p>00/00/00</p></td>
+                        <td class="uk-text-nowrap uk-text-center">$00,000.00</td>
+                        <td class="uk-text-nowrap uk-text-center"><a href="#modal-center" uk-toggle uk-icon="icon: search"></a>
+                        <td class="uk-text-nowrap uk-text-center"><a href="#modal-caption" uk-toggle uk-icon="icon: info"></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input class="uk-checkbox" type="checkbox"></td>
+                        <td class="uk-text-center">0057</td>
+                        <td class="uk-text-nowrap uk-text-center"><p>00/00/00</p></td>
+                        <td class="uk-text-nowrap uk-text-center">$00,000.00</td>
+                        <td class="uk-text-nowrap uk-text-center"><a href="#modal-center" uk-toggle uk-icon="icon: search"></a></td>
+                        <td class="uk-text-nowrap uk-text-center"><a href="#modal-caption" uk-toggle uk-icon="icon: info"></a>
+                    </tr>
+                    <tr>
+
+                        <td><input class="uk-checkbox" type="checkbox"></td>
+                        <td class="uk-text-center">0058</td>
+                        <td class="uk-text-nowrap uk-text-center"><p>00/00/00</p></td>
+                        <td class="uk-text-nowrap uk-text-center">$00,000.00</td>
+                        <td class="uk-text-nowrap uk-text-center"><a href="#modal-center" uk-toggle uk-icon="icon: search"></td>
+                        <td class="uk-text-nowrap uk-text-center"><a href="#modal-caption" uk-toggle uk-icon="icon: info"></a>
+                    </tr>
+                </tbody>
+            </table>
+            <h5 class="uk-text-center">TOTAL: $00,000.00</h5>
+          </div>
+          <div class="uk-margin-medium-top">
+            <a class="uk-button color-green text-white" title="Descargar" href="../assets/img/434-Ej.pdf" download="Facturas">Descargar Facturas</a>
+            <a class="uk-button color-green text-white" title="Descargar">Adjuntar Nueva</a>
+          </div>
+        </div>
+        <div id="modal-center" uk-modal="center: true">
+            <div class="uk-modal-dialog">
+                <button class="uk-modal-close-outside" type="button" uk-close></button>
+                <img src="../assets/img/comprobante.png" alt="">
+            </div>
+        </div>
+        <div id="modal-caption" uk-modal="center: true">
+            <div class="uk-modal-dialog">
+                <button class="uk-modal-close-default" type="button" uk-close></button>
+                <div class="uk-modal-body">
+                    <span>Folio: </span> <span>0055</span><br>
+                    <span>Cliente: </span> <span>Miguel Duarte</span><br>
+                    <span>Fecha de experiencia:</span> <span>03/07/17</span><br>
+                    <span>Estatus: </span><span>Por pagar</span><br>
+                    <span>Compromiso pago: </span> <span>01/09/17</span>
+                </div>
+                <div class="uk-modal-caption">Detalle de Factura</div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.25/js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.25/js/uikit-icons.min.js"></script>
+  </body>
 </html>
