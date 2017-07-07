@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Datos</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.25/css/uikit.min.css"/>
+  <link rel="stylesheet" href="../css/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+</head>
+<body>
+  <header uk-sticky="animation: uk-animation-slide-top">
+    <nav class="uk-padding-small color-orange" uk-navbar="mode: click">
+      <div class="uk-navbar-left">
+        <a class="uk-navbar-item uk-logo" href="#"><img src="../assets/img/logo-experimenta/Logo-experimenta-white.svg" alt=""></a>
+      </div>
+      <div class="uk-navbar-right">
+        <ul class="uk-navbar-nav uk-iconnav">
+          <li><a href="#">Contacto</a></li>
+          <li>
+            <a title="Cerrar Sesión" uk-tooltip="pos: bottom" href="#" uk-icon="icon: user" ></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <section class="uk-flex uk-flex-center color-gray">
+      <ul class="uk-subnav uk-subnav-divider">
+        <li><a href="#">Reservaciones</a></li>
+        <li><a href="#">Facturas</a></li>
+        <li>
+          <a href="#">Perfil<span uk-icon="icon:  triangle-down"></span></a>
+          <div uk-dropdown="mode: click;">
+            <ul class="uk-nav uk-navbar-dropdown-nav">
+              <li class="uk-active"><a href="#"></a></li>
+              <li><a href="datos.html">Datos</a></li>
+              <li><a href="experiencias.html">Experiecias</a></li>
+              <li><a href="convenio.html">Convenio</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="#">Preguntas</a></li>
+      </ul>
+    </section>
+  </header>
+
+  <section class="uk-width-xxlarge uk-align-center">
+    <h2 class="uk-heading-divider">¡Bienvenido, Andrea!</h2>
+    <article>
+      <h5>MIS DATOS</h5>
+      <a href="#" uk-icon="icon:  file-edit" class="uk-align-right">Editar</a>
+
+      <div class="">
+        <ul class="uk-list uk-width-auto">
+          <h3>Datos comerciales</h3>
+          <li>
+            Razón Social:
+            <p class="uk-text-bold">Laboratoria Coding A.C.</p>
+          </li>
+          <li>
+            RFC:
+            <p class="uk-text-bold">GARE871114N13</p>
+          </li>
+          <li>
+            Domicilio Fiscal:
+            <p class="uk-text-bold">Av. Insurgentes Sur 253, Roma Nte., 06700 Ciudad de México, CDMX</p>
+          </li>
+          <li>
+            Domicilio de la(s) experiencia (s):
+            <p class="uk-text-bold">Carretera Chetúmal-Puerto Juárez Kilómetro 282, Solidaridad, 77710 Playa del Carmen, Q.R.</p>
+          </li>
+        </ul>
+      </div>
+
+      <p class="uk-align-right uk-margin-medium-top">1 de 5
+        <a uk-tooltip="pos: bottom" href="datos2.html" class="uk-icon-button uk-margin-small-right color-green text-white" uk-icon="icon:  arrow-right">
+        </a>
+      </p>
+    </article>
+  </section>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.25/js/uikit.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.25/js/uikit-icons.min.js"></script>
+</body>
+</html>
