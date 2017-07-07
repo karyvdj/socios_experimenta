@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,OAAO;EACN,OAAO,EAAE,YAAY;;AAEtB,KAAK;EACJ,gBAAgB,EAAE,GAAG",
+"sources": ["../src/scss/factura.scss"],
+"names": [],
+"file": "factura.css"
+}
