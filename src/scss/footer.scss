@@ -1,10 +1,44 @@
+@import "variables";
 .container-footer{
     display: grid;
+    justify-items: center;
     grid-template-columns: 1fr 1fr 1fr 2fr;
     grid-template-rows: 30vh;
-    margin-top: 20vh;
+    margin-top: 30vh;
+    font-size: .8rem;
     & li{
         text-decoration: none;
         list-style: none;
     }
+    & a{
+        text-decoration: none;
+    }
+    
+    & a:hover{
+        color: $color-orange;
+    }
+}
+
+.list-container{
+    margin-top: 3vh;
+}
+
+.newsletter-container{
+    @extend .list-container;
+}
+
+.rss-btn{
+   
+    font-size: .5rem;
+}
+
+.social-media{
+    
+    & a{
+        color:darkgray;
+    }
+}
+
+.tel{
+    color:darkgray;
 }
