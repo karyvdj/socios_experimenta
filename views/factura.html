@@ -15,39 +15,39 @@
 
 <body>
     <header uk-sticky="animation: uk-animation-slide-top">
-        <nav class="uk-padding-small color-orange" uk-navbar="mode: click">
-            <div class="uk-navbar-left">
-                <a class="uk-navbar-item uk-logo" href="home.html"><img src="../assets/img/logo-experimenta/Logo-experimenta-white.svg" alt=""></a>
+
+      <nav class="uk-padding-small color-orange" uk-navbar="mode: click">
+        <div class="uk-navbar-left">
+          <a class="uk-navbar-item uk-logo" href="#"><img src="../assets/img/logo-experimenta/Logo-experimenta-white.svg" alt=""></a>
+        </div>
+        <div class="uk-navbar-right">
+          <ul class="uk-navbar-nav uk-iconnav">
+            <li><a href="#">Contacto</a></li>
+            <li>
+              <a title="Cerrar Sesión" uk-tooltip="pos: bottom" href="#" uk-icon="icon: user" ></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <section class="uk-flex uk-flex-center color-gray">
+        <ul class="uk-subnav uk-subnav-divider">
+          <li><a href="reservacion.html">Reservaciones</a></li>
+          <li><a href="factura.html">Facturas</a></li>
+          <li>
+            <a href="#">Perfil<span uk-icon="icon:  triangle-down"></span></a>
+            <div uk-dropdown="mode: click;">
+              <ul class="uk-nav uk-navbar-dropdown-nav">
+                <li class="uk-active"><a href="#"></a></li>
+                <li><a href="datos.html">Datos</a></li>
+                <li><a href="experiencias.html">Experiecias</a></li>
+                <li><a href="convenio.html">Convenio</a></li>
+              </ul>
             </div>
-            <div class="uk-navbar-right">
-                <ul class="uk-navbar-nav uk-iconnav">
-                    <li><a href="#">Contacto</a></li>
-                    <li>
-                        <a title="Cerrar Sesión" uk-tooltip="pos: bottom" href="#" uk-icon="icon: user"></a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-        <section class="uk-flex uk-flex-center color-gray">
-            <ul class="uk-subnav uk-subnav-divider">
-                <li><a href="reservacion.html">Reservaciones</a></li>
-                <li><a href="factura.html">Facturas</a></li>
-                <li>
-                    <a href="#">Perfil<span uk-icon="icon:  triangle-down"></span></a>
-                    <div uk-dropdown="mode: click;">
-                        <ul class="uk-nav uk-navbar-dropdown-nav">
-                            <li class="uk-active">
-                                <a href="#"></a>
-                            </li>
-                            <li><a href="datos.html">Datos</a></li>
-                            <li><a href="#">Experiecias</a></li>
-                            <li><a href="#">Convenio</a></li>
-                        </ul>
-                    </div>
-                </li>
-                <li><a href="preguntas.html">Preguntas</a></li>
-            </ul>
-        </section>
+          </li>
+          <li><a href="preguntas.html">Preguntas</a></li>
+        </ul>
+      </section>
+
     </header>
 
     <section class="uk-padding-large uk-offcanvas-content">
