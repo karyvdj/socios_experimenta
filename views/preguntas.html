@@ -2,124 +2,147 @@
 <html lang="es">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Preguntas</title>
     <link rel="shortcut icon" type="image/x-icon" href="../assets/img/logo-experimenta/ico_ex-02.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.25/css/uikit.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.25/css/uikit.min.css" />
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
-    
-  </head>
-  <body>
+
+</head>
+
+<body>
     <header uk-sticky="animation: uk-animation-slide-top">
-      <nav class="uk-padding-small color-orange" uk-navbar="mode: click">
-        <div class="uk-navbar-left">
-          <a class="uk-navbar-item uk-logo" href="#"><img src="../assets/img/logo-experimenta/Logo-experimenta-white.svg" alt=""></a>
-        </div>
-        <div class="uk-navbar-right">
-          <ul class="uk-navbar-nav uk-iconnav">
-            <li><a href="#">Contacto</a></li>
-            <li>
-              <a title="Cerrar Sesión" uk-tooltip="pos: bottom" href="#" uk-icon="icon: user" ></a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-      <section class="uk-flex uk-flex-center color-gray">
-          <ul class="uk-subnav uk-subnav-divider">
-              <li><a href="#">Reservaciones</a></li>
-              <li><a href="#">Facturas</a></li>
-              <li>
-                  <a href="#">Perfil<span uk-icon="icon:  triangle-down"></span></a>
-                  <div uk-dropdown="mode: click;">
-                      <ul class="uk-nav uk-navbar-dropdown-nav">
-                          <li class="uk-active"><a href="#"></a></li>
-                          <li><a href="#">Datos</a></li>
-                          <li><a href="#">Experiecias</a></li>
-                          <li><a href="#">Convenio</a></li>
-                      </ul>
-                  </div>
-              </li>
-              <li><a href="#">Preguntas</a></li>
-          </ul>
-      </section>
+        <nav class="uk-padding-small color-orange" uk-navbar="mode: click">
+            <div class="uk-navbar-left">
+                <a class="uk-navbar-item uk-logo" href="home.html"><img src="../assets/img/logo-experimenta/Logo-experimenta-white.svg" alt=""></a>
+            </div>
+            <div class="uk-navbar-right">
+                <ul class="uk-navbar-nav uk-iconnav">
+                    <li><a href="#">Contacto</a></li>
+                    <li>
+                        <a title="Cerrar Sesión" uk-tooltip="pos: bottom" href="#" uk-icon="icon: user"></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <section class="uk-flex uk-flex-center color-gray">
+            <ul class="uk-subnav uk-subnav-divider">
+                <li><a href="reservacion.html">Reservaciones</a></li>
+                <li><a href="factura.html">Facturas</a></li>
+                <li>
+                    <a href="#">Perfil<span uk-icon="icon:  triangle-down"></span></a>
+                    <div uk-dropdown="mode: click;">
+                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                            <li class="uk-active">
+                                <a href="#"></a>
+                            </li>
+                            <li><a href="datos.html">Datos</a></li>
+                            <li><a href="experiencias.html">Experiecias</a></li>
+                            <li><a href="#">Convenio</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="preguntas.html">Preguntas</a></li>
+            </ul>
+        </section>
     </header>
 
     <section class="uk-width-xxlarge uk-align-center">
-      <h2 class="uk-heading-divider">Preguntas frecuentes</h2>
-      <article>
-        <ul uk-accordion>
-          <li class="uk-padding-small">
-              <h3 class="uk-accordion-title">¿Cuáles son las <b>ventajas</b> de trabajar con <b class="text-orange">Experimenta</b>?</h3>
-              <div class="uk-accordion-content uk-padding-small">
-                  <p >Conócelas <a target="_blank" href="https://docs.google.com/presentation/d/1jrXRjEsO8ixoEMaLXIurwxkfMO4g3exFVHhXmddRMYE/edit#slide=id.g23ac5ba04f_0_155">aquí</a></p>
-              </div>
-          </li>
-          <li class="uk-padding-small">
-              <h3 class="uk-accordion-title">¿Cómo me <b>promocionan</b>?</h3>
-              <div class="uk-accordion-content uk-padding-small">
-                  <p>Te promocionamos en nuestras redes sociales, sitio de internet, corporativos, canales de venta, revistas
-                     y programas de radio
-                   </p>
-              </div>
-          </li>
-          <li class="uk-padding-small">
-              <h3 class="uk-accordion-title">¿Cuánto tiempo es válido el <b>convenio</b>?</h3>
-              <div class="uk-accordion-content uk-padding-small">
-                  <p>El convenio tiene duración de 2 años y es autorenovable. Se puede modificar y dar de baja en cualquier momento
-                    notificando a Experimenta con un mes de aniticipación.
-                  </p>
-              </div>
-          </li>
-          <li class="uk-padding-small">
-              <h3 class="uk-accordion-title">¿Hay un <b>límite</b> de <b>experiencias</b> que puedo <b>promocionar</b> con <b class="text-orange">Experimenta</b>?</h3>
-              <div class="uk-accordion-content uk-padding-small">
-                  <p>Estamos interesados en tener en nuestro catalogo todas las experiencias que quieres promocionar con nosotros.
-                     No hay ningun minimo ni maximo en el numero de experiencias.
-                   </p>
-              </div>
-          </li>
-          <li class="uk-padding-small">
-              <h3 class="uk-accordion-title">¿Cuántos <b>cambios</b> puedo hacer en <b>mis experiencias</b> y cuándo?</h3>
-              <div class="uk-accordion-content uk-padding-small">
-                  <p>Puedes hacer cuantos cambios quieras y cuando quieras. Puedes hacer modificaciones directamente en la seccion
-                     "mis experiencias" y nuestro equipo esta siempre a tu disposicion para ayudarte con lo que se te ofrece.
-                   </p>
-              </div>
-          </li>
-          <li class="uk-padding-small">
-              <h3 class="uk-accordion-title">¿Cuánto <b>tiempo</b> tengo para cobrar una <b>reservación</b>?</h3>
-              <div class="uk-accordion-content uk-padding-small">
-                  <p>A partir de que la experiencia este vivida, tienes hasta 6 meses para mandarnos tu factura.
-                     Despues de estos 6 meses, la experiencia será incobrable por politicas de nuestra empresa.
-                   </p>
-              </div>
-          </li>
-        </ul>
-        <p class="uk-align-right uk-margin-medium-top">Contáctanos y resolveremos tus dudas
-          <a title="socios@experimenta.com.mx" uk-tooltip="pos: bottom" href="mailto:socios@experimenta.com.mx" class="uk-icon-button uk-margin-small-right color-green text-white" uk-icon="icon: mail">
-          </a>
-        </p>
-      </article>
+        <h2 class="uk-heading-divider">Preguntas frecuentes</h2>
+        <article>
+            <ul uk-accordion>
+                <li class="uk-padding-small">
+                    <h3 class="uk-accordion-title">¿Cuáles son las <b>ventajas</b> de trabajar con <b class="text-orange">Experimenta</b>?</h3>
+                    <div class="uk-accordion-content uk-padding-small">
+                        <p>Conócelas <a target="_blank" href="https://docs.google.com/presentation/d/1jrXRjEsO8ixoEMaLXIurwxkfMO4g3exFVHhXmddRMYE/edit#slide=id.g23ac5ba04f_0_155">aquí</a></p>
+                    </div>
+                </li>
+                <li class="uk-padding-small">
+                    <h3 class="uk-accordion-title">¿Cómo me <b>promocionan</b>?</h3>
+                    <div class="uk-accordion-content uk-padding-small">
+                        <p>Te promocionamos en nuestras redes sociales, sitio de internet, corporativos, canales de venta, revistas y programas de radio
+                        </p>
+                    </div>
+                </li>
+                <li class="uk-padding-small">
+                    <h3 class="uk-accordion-title">¿Cuánto tiempo es válido el <b>convenio</b>?</h3>
+                    <div class="uk-accordion-content uk-padding-small">
+                        <p>El convenio tiene duración de 2 años y es autorenovable. Se puede modificar y dar de baja en cualquier momento notificando a Experimenta con un mes de aniticipación.
+                        </p>
+                    </div>
+                </li>
+                <li class="uk-padding-small">
+                    <h3 class="uk-accordion-title">¿Hay un <b>límite</b> de <b>experiencias</b> que puedo <b>promocionar</b> con <b class="text-orange">Experimenta</b>?</h3>
+                    <div class="uk-accordion-content uk-padding-small">
+                        <p>Estamos interesados en tener en nuestro catalogo todas las experiencias que quieres promocionar con nosotros. No hay ningun minimo ni maximo en el numero de experiencias.
+                        </p>
+                    </div>
+                </li>
+                <li class="uk-padding-small">
+                    <h3 class="uk-accordion-title">¿Cuántos <b>cambios</b> puedo hacer en <b>mis experiencias</b> y cuándo?</h3>
+                    <div class="uk-accordion-content uk-padding-small">
+                        <p>Puedes hacer cuantos cambios quieras y cuando quieras. Puedes hacer modificaciones directamente en la seccion "mis experiencias" y nuestro equipo esta siempre a tu disposicion para ayudarte con lo que se te ofrece.
+                        </p>
+                    </div>
+                </li>
+                <li class="uk-padding-small">
+                    <h3 class="uk-accordion-title">¿Cuánto <b>tiempo</b> tengo para cobrar una <b>reservación</b>?</h3>
+                    <div class="uk-accordion-content uk-padding-small">
+                        <p>A partir de que la experiencia este vivida, tienes hasta 6 meses para mandarnos tu factura. Despues de estos 6 meses, la experiencia será incobrable por politicas de nuestra empresa.
+                        </p>
+                    </div>
+                </li>
+            </ul>
+            <p class="uk-align-right uk-margin-medium-top">Contáctanos y resolveremos tus dudas
+                <a title="socios@experimenta.com.mx" uk-tooltip="pos: bottom" href="mailto:socios@experimenta.com.mx" class="uk-icon-button uk-margin-small-right color-green text-white" uk-icon="icon: mail">
+                </a>
+            </p>
+        </article>
     </section>
-    
-    <footer class="color-gray container-footer">
-       <ul>
-       <li>EXPERIMENTA</li>
-       <li><a href="">Home</a></li>
-       <li><a href="">¿Quienes Somos?</a></li>
-       <li><a href="#">¿Como funciona?</a></li>
-       <li><a href="#">Recibi un Kit</a></li>
-       <li><a href="#">Blog</a></li>
-       </ul>
-        
-    </footer>
 
+    <footer class="color-gray container-footer">
+        <ul>
+            <li>EXPERIMENTA</li>
+            <li><a href="">Home</a></li>
+            <li><a href="">¿Quienes Somos?</a></li>
+            <li><a href="#">¿Como funciona?</a></li>
+            <li><a href="#">Recibi un Kit</a></li>
+            <li><a href="#">Blog</a></li>
+        </ul>
+        <ul>
+           <li>SERVICIO AL CLIENTE</li>
+            <li><a>Preguntas Frecuentes</a></li>
+            <li><a>Garantia de Servicio</a></li>
+            <li>POLITICAS</li>
+            <li><a>Terminos y Condiciones</a></li>
+            <li><a>Privacidad</a></li>
+        </ul>
+        <ul>
+            <li>SOLUCIONES CORPORATIVAS</li>
+            <li><a href="">Regalos Corporativos</a></li>
+            <li><a href="">Cotiza tu iniciativa</a></li>
+            <li></li>
+        </ul>
+        <div>
+            <p>Inscríbete a nuestro Newsletter para recibir grandes ideas...</p>
+            <input type="text">
+            <button class="color-orange text-white">Suscribir</button>
+            <div>
+                <a href="" uk-icon="icon: twitter; ratio: 2"></a>
+                <a href="" uk-icon="icon: facebook; ratio: 2"></a>
+                <a href="" uk-icon="icon: linkedin; ratio: 2"></a>
+                <a href="" uk-icon="icon: youtube; ratio: 2"></a>
+                <a href="" uk-icon="icon: rss; ratio: 2"></a>
+            </div>
+        </div>
+
+    </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.25/js/uikit.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.25/js/uikit-icons.min.js"></script>
-  </body>
+</body>
 </html>
