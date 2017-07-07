@@ -14,7 +14,7 @@
     <header uk-sticky="animation: uk-animation-slide-top">
       <nav class="uk-padding-small color-orange" uk-navbar="mode: click">
         <div class="uk-navbar-left">
-          <a class="uk-navbar-item uk-logo" href="home.html"><img src="../assets/img/logo-experimenta/Logo-experimenta-white.svg" alt=""></a>
+          <a class="uk-navbar-item uk-logo" href="#"><img src="../assets/img/logo-experimenta/Logo-experimenta-white.svg" alt=""></a>
         </div>
         <div class="uk-navbar-right">
           <ul class="uk-navbar-nav uk-iconnav">
@@ -26,122 +26,124 @@
         </div>
       </nav>
       <section class="uk-flex uk-flex-center color-gray">
-          <ul class="uk-subnav uk-subnav-divider">
-              <li><a href="reservacion.html">Reservaciones</a></li>
-              <li><a href="factura.html">Facturas</a></li>
-              <li>
-                  <a href="#">Perfil<span uk-icon="icon:  triangle-down"></span></a>
-                  <div uk-dropdown="mode: click;">
-                      <ul class="uk-nav uk-navbar-dropdown-nav">
-                          <li class="uk-active"><a href="#"></a></li>
-                          <li><a href="datos.html">Datos</a></li>
-                          <li><a href="experiencias.html">Experiecias</a></li>
-                          <li><a href="convenio.html">Convenio</a></li>
-                      </ul>
-                  </div>
-              </li>
-              <li><a href="preguntas.html">Preguntas</a></li>
-          </ul>
+        <ul class="uk-subnav uk-subnav-divider">
+          <li><a href="reservacion.html">Reservaciones</a></li>
+          <li><a href="factura.html">Facturas</a></li>
+          <li>
+            <a href="#">Perfil<span uk-icon="icon:  triangle-down"></span></a>
+            <div uk-dropdown="mode: click;">
+              <ul class="uk-nav uk-navbar-dropdown-nav">
+                <li class="uk-active"><a href="#"></a></li>
+                <li><a href="datos.html">Datos</a></li>
+                <li><a href="experiencias.html">Experiecias</a></li>
+                <li><a href="convenio.html">Convenio</a></li>
+              </ul>
+            </div>
+          </li>
+          <li><a href="preguntas.html">Preguntas</a></li>
+        </ul>
       </section>
     </header>
 
     <section class="uk-padding-large uk-offcanvas-content">
-      <div class="uk-heading-line">
-          <h2>Reservaciones</h2>
-      </div>
-      <div class="uk-align-right">
-        <a class="uk-icon-button uk-margin-small-right color-green text-white" uk-search-icon href="#"></a>
-        <div class="uk-drop" uk-drop="mode: click; pos: left-center; offset: 0">
-            <form class="uk-search">
-                <input class="uk-search-input" type="search" placeholder="Ingresa el dato a buscar..." autofocus>
-            </form>
+      <div class="uk-container">
+        <div class="uk-heading-line">
+            <h2>Reservaciones</h2>
         </div>
-      </div>
-      <table class="uk-table uk-table-divider">
-        <thead>
-          <tr>
-              <th class="uk-width-small">Folio</th>
-              <th>Estatus</th>
-              <th>Cliente</th>
-              <th>Experiencia</th>
-              <th>Fecha</th>
-              <th>Observaciones</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-              <td>FOL000001 <a class="uk-button-text text-orange" uk-toggle="target: #detalles" uk-icon="icon: info"></a> </td>
-              <td>RESERVAR</td>
-              <td>Lorem</td>
-              <td>Lorem ipsum dolor sit amet, consectetur ...</td>
-              <td>00/00/00</td>
-              <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                  dolore magna aliqua.
-              </td>
-          </tr>
-          <tr>
-              <td>FOL000001 <a class="uk-button-text text-orange" uk-toggle="target: #detalles" uk-icon="icon: info"></a> </td>
-              <td>PENDIENTES</td>
-              <td>Lorem</td>
-              <td>Lorem ipsum dolor sit amet, consectetur ...</td>
-              <td>00/00/00</td>
-              <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                  dolore magna aliqua.
-              </td>
-          </tr>
-          <tr>
-              <td>FOL000001 <a class="uk-button-text text-orange" uk-toggle="target: #detalles" uk-icon="icon: info"></a></td>
-              <td>PAGADAS</td>
-              <td>Lorem</td>
-              <td>Lorem ipsum dolor sit amet, consectetur ...</td>
-              <td>00/00/00</td>
-              <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                  dolore magna aliqua.
-              </td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
+        <div class="uk-align-right">
+          <a class="uk-icon-button uk-margin-small-right color-green text-white" uk-search-icon href="#"></a>
+          <div class="uk-drop" uk-drop="mode: click; pos: left-center; offset: 0">
+              <form class="uk-search">
+                  <input class="uk-search-input" type="search" placeholder="Ingresa el dato a buscar..." autofocus>
+              </form>
+          </div>
+        </div>
+        <table class="uk-table uk-table-divider">
+          <thead>
+            <tr>
+                <th class="uk-width-small">Folio</th>
+                <th>Estatus</th>
+                <th>Cliente</th>
+                <th>Experiencia</th>
+                <th>Fecha</th>
+                <th>Observaciones</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+                <td>FOL000001 <a class="uk-button-text text-orange" uk-toggle="target: #detalles" uk-icon="icon: info"></a> </td>
+                <td class="uk-text-primary">RESERVAR</td>
+                <td>Lorem</td>
+                <td>Lorem ipsum dolor sit amet, consectetur ...</td>
+                <td>00/00/00</td>
+                <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                    dolore magna aliqua.
+                </td>
+            </tr>
+            <tr>
+                <td>FOL000001 <a class="uk-button-text text-orange" uk-toggle="target: #detalles" uk-icon="icon: info"></a> </td>
+                <td class="uk-text-danger">PENDIENTES</td>
+                <td>Lorem</td>
+                <td>Lorem ipsum dolor sit amet, consectetur ...</td>
+                <td>00/00/00</td>
+                <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                    dolore magna aliqua.
+                </td>
+            </tr>
+            <tr>
+                <td>FOL000001 <a class="uk-button-text text-orange" uk-toggle="target: #detalles" uk-icon="icon: info"></a></td>
+                <td class="uk-text-success">PAGADAS</td>
+                <td>Lorem</td>
+                <td>Lorem ipsum dolor sit amet, consectetur ...</td>
+                <td>00/00/00</td>
+                <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                    dolore magna aliqua.
+                </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
 
-    <section>
-      <article id="detalles" uk-offcanvas="mode: push; overlay: true">
-        <div class="uk-offcanvas-bar color-gray">
-          <button class="uk-offcanvas-close" type="button" uk-close></button>
-            <img src="../assets/img/fotos-stock/Aventura/shutterstock_127957634.jpg" class="uk-border-circle" alt="experiencia">
-            <h2 class="uk-article-title">Experiencia</h2>
-            <div class="uk-grid-small uk-child-width-auto" uk-grid>
-                <div>
-                    <p class="uk-article-meta">Folio: <span class="text-white">FOL000001</span>
-                </div>
-                <div>
-                    <p class="uk-article-meta">Estatus: <span class="text-white">PENDIENTE</span>
-                </div>
-            </div>
-            <div class="uk-margin">
-              <span uk-icon="icon: user"></span>
-              <span class="text-white">Persona que reservo</span>
-            </div>
-            <div>
-              <span class="uk-margin" uk-icon="icon: mail"></span>
-              <a href="mailto:socios@experimenta.com.mx" class="text-white  uk-button-text">socios@experimenta.com.mx</a>
-            </div>
-            <div>
-              <span class="uk-margin" uk-icon="icon: phone"></span>
-              <a href="tel://015552925707" class="text-white uk-button-text">01 55 5292-5707</a>
-            </div>
-            <div>
-              <span class="uk-margin" uk-icon="icon: calendar"></span>
-              <span class="text-white">20/MAY/2017</span>
-            </div>
-            <div class="uk-margin-small">
-              <p>Observaciones:</p>
-              <textarea class="uk-textarea" rows="5" placeholder="Comentario"></textarea>
-            </div>
-            <div class="uk-align-right">
-              <button class="uk-button button-style">Actualizar</button>
-            </div>
-        </div>
-      </article>
+      <section>
+        <article id="detalles" uk-offcanvas="mode: push; overlay: true">
+          <div class="uk-offcanvas-bar color-gray">
+            <button class="uk-offcanvas-close" type="button" uk-close></button>
+              <img src="../assets/img/fotos-stock/Aventura/shutterstock_127957634.jpg" class="uk-border-circle" alt="experiencia">
+              <h2 class="uk-article-title">Experiencia</h2>
+              <div class="uk-grid-small uk-child-width-auto" uk-grid>
+                  <div>
+                      <p class="uk-article-meta">Folio: <span class="text-white">FOL000001</span>
+                  </div>
+                  <div>
+                      <p class="uk-article-meta">Estatus: <span class="text-white">PENDIENTE</span>
+                  </div>
+              </div>
+              <div class="uk-margin">
+                <span uk-icon="icon: user"></span>
+                <span class="text-white">Persona que reservo</span>
+              </div>
+              <div>
+                <span class="uk-margin" uk-icon="icon: mail"></span>
+                <a href="mailto:socios@experimenta.com.mx" class="text-white  uk-button-text">socios@experimenta.com.mx</a>
+              </div>
+              <div>
+                <span class="uk-margin" uk-icon="icon: phone"></span>
+                <a href="tel://015552925707" class="text-white uk-button-text">01 55 5292-5707</a>
+              </div>
+              <div>
+                <span class="uk-margin" uk-icon="icon: calendar"></span>
+                <span class="text-white">20/MAY/2017</span>
+              </div>
+              <div class="uk-margin-small">
+                <p>Observaciones:</p>
+                <textarea class="uk-textarea" rows="5" placeholder="Comentario"></textarea>
+              </div>
+              <div class="uk-align-right">
+                <button class="uk-button button-style">Actualizar</button>
+              </div>
+          </div>
+        </article>
+      </div>
     </section>
 
 
