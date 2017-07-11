@@ -48,3 +48,18 @@ h2, h3{
 .uk-subnav{
   padding-top: 1.5%;
 }
+
+.button-style{
+  border-radius: 5px;
+  border: 1px solid $color-green;
+  color: white;
+  background: $color-green;
+  &:hover{
+    background: none;
+    border: 1px solid white;
+    color: white;
+  }
+}
+.shadow-text{
+  text-shadow: 10px 10px 41px -6px rgba(0,0,0,0.75);
+}
